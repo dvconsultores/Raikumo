@@ -39,7 +39,7 @@
 
       <md-button
         class="md-simple raikumo"
-        href="/"
+        href="/raikumo"
         @click="scrollToElement()"
       ></md-button>
       <!--v-for="(linkEscritorio, index) in dataEscritorio"
