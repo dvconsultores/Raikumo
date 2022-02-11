@@ -1,0 +1,182 @@
+<!--
+
+=========================================================
+* Vue Material Kit - v1.2.2
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/vue-material-kit
+* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/vue-material-kit/blob/master/LICENSE.md)
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.png" />
+    <title>Raikumo</title>
+
+    <!--  Fonts and icons     -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="//fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body class="hidden">
+    <div class="centrar" id="onload">
+      <div class="lds-facebook">
+        <div class="lds-1"></div>
+        <div class="lds-2"></div>
+        <div class="lds-3"></div>
+      </div>
+    </div>
+    <noscript>
+      <strong
+        >We're sorry but vue-material-kit doesn't work properly without
+        JavaScript enabled. Please enable it to continue.</strong
+      >
+    </noscript>
+    <div class="filtro1"></div>
+    <div class="filtro2"></div>
+    <div class="filtro3"></div>
+    <div class="filtro4"></div>
+    <div class="filtro5"></div>
+    <div class="filtro6"></div>
+    <div class="filtro7"></div>
+    <div class="filtro8"></div>
+    <div class="filtro9"></div>
+    <div class="filtro10"></div>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="codigo.js"></script>
+  </body>
+</html>
+
+<style>
+  @import "/filtro.css";
+  @font-face {
+    font-family: "intel";
+    src: url("../assets/fonts/Intel.ttf");
+    src: url("//db.onlinewebfonts.com/t/ac77b313cd492cd92ce0416574521f57.eot");
+    src: url("//db.onlinewebfonts.com/t/ac77b313cd492cd92ce0416574521f57.eot?#iefix")
+        format("embedded-opentype"),
+      url("//db.onlinewebfonts.com/t/ac77b313cd492cd92ce0416574521f57.woff2")
+        format("woff2"),
+      url("//db.onlinewebfonts.com/t/ac77b313cd492cd92ce0416574521f57.woff")
+        format("woff"),
+      url("//db.onlinewebfonts.com/t/ac77b313cd492cd92ce0416574521f57.ttf")
+        format("truetype"),
+      url("//db.onlinewebfonts.com/t/ac77b313cd492cd92ce0416574521f57.svg#Intel Clear")
+        format("svg");
+  }
+  html::-webkit-scrollbar {
+    width: 1.35vmax;
+    height: 1.35vmax;
+    background-color: black;
+  }
+  html::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+      100deg,
+      black 10%,
+      rgba(83, 202, 251, 0.4),
+      black
+    );
+    border-radius: 5px;
+  }
+  * {
+    scroll-behavior: smooth;
+  }
+  * p,
+  span,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  a,
+  li {
+    font-family: "intel", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  }
+  body {
+    background: black;
+  }
+
+  .hidden {
+    overflow: hidden;
+  }
+  .centrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  /*                     */
+  .lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .lds-1 {
+    background: linear-gradient(#53cafb 70%, blueviolet);
+  }
+  .lds-2 {
+    background: linear-gradient(#53cafb 30%, blueviolet);
+  }
+  .lds-3 {
+    background: linear-gradient(#53cafb 5%, blueviolet);
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    50%,
+    100% {
+      top: 24px;
+      height: 32px;
+    }
+  }
+</style>
