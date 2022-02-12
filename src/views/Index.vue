@@ -8,24 +8,13 @@
         style="background: transparent; box-shadow: none"
       >
         <div class="espacio"></div>
-        <help id="FAQ"></help>
         <!--////////////////////-->
+        <help id="FAQ"></help>
         <history id="history"></history>
         <team id="team"></team>
         <jobs id="jobs"></jobs>
       </main>
     </div>
-    <!--
-    <video
-      src="@/assets/videos/raikumo.mp4"
-      type="video/mp4"
-      controls
-      autoplay
-      loop
-      muted
-    >
-      your browser does not support HTML5
-    </video>-->
   </div>
 </template>
 
@@ -58,14 +47,15 @@ export default {
   /*
   methods: {
     scrollAnim1() {
-      let animado1 = document.getElementById("animado1");
-      const posicionObj1 = animado1.getBoundingClientRect().top;
+      const animadoA = document.querySelectorAll(".animadoA");
+      const posicionA = animadoA.getBoundingClientRect().top;
 
-      const tamañoPantalla = window.innerHeight / 3;
+      const tamañoPantallaA = window.innerHeight / 3;
+      const tamañoPantallaC = window.innerHeight / 5;
 
-      if (posicionObj1 < tamañoPantalla) {
-        animado1.classList.add("animate__animated");
-        animado1.classList.add("animate__bounce");
+      if (posicionA < tamañoPantallaA) {
+        animadoA.style.opacity = 1;
+        animadoA.classList.add("animadoMover");
       }
     },
     scrollListener() {
@@ -77,7 +67,8 @@ export default {
   },
   beforeDestroy() {
     document.removeEventListener("scroll", this.scrollListener);
-  }*/
+  }
+  */
 };
 </script>
 
@@ -177,14 +168,23 @@ export default {
 #jobs {
   position: relative;
 }
+
+///////////////////////////////////////////////////////////////////////
 /*
-video {
-  position: fixed;
-  min-width: 100%;
-  min-height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  z-index: 0;
-}*/
+.animadoA {
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.animadoMover {
+  animation: animadoA 0.5s ease-in-out;
+}
+@keyframes animadoA {
+  0% {
+    transform: translatex(-40%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+*/
 </style>
