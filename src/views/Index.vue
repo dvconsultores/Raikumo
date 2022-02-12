@@ -174,6 +174,9 @@ export default {
   );
   border-radius: 35%;
 }
+#jobs {
+  position: relative;
+}
 /*
 video {
   position: fixed;

@@ -74,13 +74,14 @@
                 >link here!</a
               >
             </p>
-            <p style="text-align: end; margin-top: 5%">
+            <p class="textoFinal">
               ...Contact us with <strong>endygamie.near#3151</strong>
             </p>
           </aside>
         </div>
       </section>
     </div>
+    <div class="espaciobottom"></div>
   </div>
 </template>
 
@@ -103,6 +104,10 @@
   margin-top: 8vmax;
   position: relative;
 }
+.espaciobottom {
+  margin-bottom: 5vmax;
+  position: relative;
+}
 #tituloH {
   width: 47%;
   height: 7vmax;
@@ -120,26 +125,30 @@ h1 {
   font-size: 10vmax;
 }
 h2 {
-  text-align: start;
+  text-align: center;
   line-height: 35px;
   margin-top: 5%;
   margin-bottom: 4vmax;
 }
 p {
-  text-align: justify;
+  text-align: center;
   font-size: 2vmax;
   line-height: 2.8vmax;
   margin-bottom: 3vmax;
 }
 aside p {
   line-height: 5%;
-  margin-bottom: 6vmax;
+  margin-bottom: 7vmax;
 }
 .containerTexto {
   margin: auto;
   padding: 5%;
   border-radius: 5vmax;
   background: rgb(0, 0, 0, 0.4);
-  width: 90%;
+  width: 100%;
+}
+.textoFinal {
+  text-align: end;
+  margin-top: 5%;
 }
 </style>
