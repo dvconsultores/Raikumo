@@ -75,6 +75,9 @@
   .filtro6:hover {
     transform: scale(1.5, 1.5);
   }
+  .filtro6:active {
+    background: linear-gradient(30deg, yellow, blueviolet);
+  }
   .filtro7 {
     position: absolute;
     width: 8px;
@@ -103,6 +106,9 @@
   .filtro8:hover {
     transform: scale(1.5, 1.5);
   }
+  .filtro8:active {
+    background: linear-gradient(30deg, yellow, blueviolet);
+  }
   .filtro9 {
     position: absolute;
     width: 8px;
@@ -117,6 +123,10 @@
     filter: blur(1px);
     transform: scale(1.5, 1.5);
   }
+  .filtro9:active {
+    transform: rotate(30deg);
+    background: violet;
+  }
   .filtro10 {
     position: absolute;
     width: 8px;
@@ -130,6 +140,10 @@
   .filtro10:hover {
     filter: blur(1px);
     transform: scale(1.5, 1.5);
+  }
+  .filtro10:active {
+    transform: rotate(-30deg);
+    background: linear-gradient(30deg, yellow, blueviolet);
   }
   /////////////////////////////////////////////
   
@@ -147,6 +161,9 @@
 .filtroA:hover {
   transform: scale(1.5, 1.5);
 }
+.filtroA:active {
+  background: violet;
+}
 .filtroB {
   position: absolute;
   width: 8px;
@@ -160,6 +177,10 @@
 .filtroB:hover {
   filter: blur(1px);
   transform: scale(1.5, 1.5);
+}
+.filtroB:active {
+  transform: rotate(30deg);
+  background: violet;
 }
 .filtroC {
   position: absolute;
@@ -175,6 +196,10 @@
   filter: blur(1px);
   transform: scale(1.5, 1.5);
 }
+.filtroC:active {
+  transform: rotate(-30deg);
+  background: linear-gradient(30deg, yellow, blueviolet);
+}
 .filtroD {
   position: absolute;
   width: 14px;
@@ -188,6 +213,9 @@
 }
 .filtroD:hover {
   transform: scale(1.5, 1.5);
+}
+.filtroD:active {
+  background: linear-gradient(30deg, yellow, blueviolet);
 }
 .filtroE {
   position: absolute;
@@ -203,6 +231,10 @@
   filter: blur(1px);
   transform: scale(1.5, 1.5);
 }
+.filtroE:active {
+  transform: rotate(-30deg);
+  background: linear-gradient(30deg, yellow, blueviolet);
+}
 .filtroF {
   position: absolute;
   width: 14px;
@@ -216,6 +248,9 @@
 }
 .filtroF:hover {
   transform: scale(1.5, 1.5);
+}
+.filtroF:active {
+  background: linear-gradient(30deg, yellow, blueviolet);
 }
 .filtroG {
   position: absolute;
@@ -231,6 +266,10 @@
   filter: blur(1px);
   transform: scale(1.5, 1.5);
 }
+.filtroG:active {
+  transform: rotate(30deg);
+  background: violet;
+}
 .filtroH {
   position: absolute;
   width: 8px;
@@ -244,6 +283,10 @@
 .filtroH:hover {
   filter: blur(1px);
   transform: scale(1.5, 1.5);
+}
+.filtroH:active {
+  transform: rotate(-30deg);
+  background: linear-gradient(30deg, yellow, blueviolet);
 }
 .filtroI {
   position: absolute;
@@ -259,6 +302,9 @@
 .filtroI:hover {
   transform: scale(1.5, 1.5);
 }
+.filtroI:active {
+  background: violet;
+}
 .filtroJ {
   position: absolute;
   width: 8px;
@@ -272,4 +318,8 @@
 .filtroJ:hover {
   filter: blur(1px);
   transform: scale(1.5, 1.5);
+}
+.filtroJ:active {
+  transform: rotate(30deg);
+  background: violet;
 }
