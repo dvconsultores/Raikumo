@@ -85,7 +85,7 @@
     filter: blur(1px);
     transform: scale(1.5, 1.5);
   }
-  .filtro8 {
+  .filtroA {
     position: absolute;
     width: 14px;
     height: 14px;
@@ -96,10 +96,10 @@
     z-index: 5;
     transition: 0.5s ease-in-out;
   }
-  .filtro8:hover {
+  .filtroA:hover {
     transform: scale(1.5, 1.5);
   }
-  .filtro9 {
+  .filtroB {
     position: absolute;
     width: 8px;
     height: 8px;
@@ -109,7 +109,7 @@
     z-index: 5;
     transition: 0.5s ease-in-out;
   }
-  .filtro9:hover {
+  .filtroB:hover {
     filter: blur(1px);
     transform: scale(1.5, 1.5);
   }

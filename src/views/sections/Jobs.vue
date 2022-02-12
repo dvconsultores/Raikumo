@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper parallaxJobs" style="background: transparent !important">
     <div class="espacioTop"></div>
-    <div class="container md-alignment-top-center">
+    <div class="container achicar">
       <section>
         <h1 id="tituloH">Jobs</h1>
         <div class="filtro8"></div>
@@ -95,6 +95,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: rgb(2, 2, 2);
+}
+.achicar {
+  max-width: 90%;
 }
 .espacioTop {
   margin-top: 3vmax;

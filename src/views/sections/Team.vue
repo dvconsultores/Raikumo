@@ -199,7 +199,7 @@ export default {
 
 <style scoped>
 .containerGrid {
-  width: 85%;
+  max-width: 85%;
 }
 .grid {
   display: grid;

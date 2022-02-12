@@ -11,6 +11,9 @@
         }
     }
 }
+@media (min-width: 1600px) {
+  
+}
 /*  cambios para muy pequenito en histoia  */
 
 @media (max-width: 500px) { 
@@ -21,12 +24,29 @@
 }
 }
 
+@media (max-width: 300px) { 
+  .achicar {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  }
+
 /*          Changes for small display      */
 
 @media (max-width: 991px){
     
+    .filtroA {
+      display: none !important;
+    }
+    .filtroB {
+      display: none !important;
+    }
+
     .questions {
-      width: 100% !important;
+      width: 80% !important;
+    }
+    .preguntas {
+      padding: 1.1vmax 2vmax !important;
     }
 
     .espaciotop {
@@ -137,7 +157,7 @@
       grid-template-areas: "1 2" !important;
       grid-template-columns: 50% 50% !important;
       width: 100%;
-      margin: auto 13% !important;
+      margin: auto 9% !important;
     }
     .containerDatos {
       width: 30vmax !important;

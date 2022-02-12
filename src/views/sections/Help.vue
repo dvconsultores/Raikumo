@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <div class="container">
+    <div class="container achicar">
       <md-toolbar
         style="justify-content: start;"
         class="toolbarQuestions colorBase"
@@ -16,17 +16,6 @@
                 {{ item.question }}
               </span>
 
-              <md-button
-                class="md-icon-button"
-                style="background-color: transparent !important; box-shadow: none !important; position: absolute; right: 2.5%"
-              >
-                <md-icon
-                  style="font-size: 2.5vmax !important; height: 30%; transition: ease 1s !important"
-                >
-                  {{ item.icono }}
-                </md-icon>
-              </md-button>
-
               <md-list slot="md-expand">
                 <md-list-item>
                   <span
@@ -38,6 +27,16 @@
               </md-list>
             </md-list-item>
           </md-list>
+          <md-button
+            class="md-icon-button botonQuestions"
+            style="background-color: transparent !important; box-shadow: none !important; position: absolute"
+          >
+            <md-icon
+              style="font-size: 2.5vmax !important; height: 30%; transition: ease 1s !important"
+            >
+              {{ item.icono }}
+            </md-icon>
+          </md-button>
         </div>
       </md-toolbar>
     </div>
@@ -143,8 +142,9 @@ svg {
 .preguntas {
   font-size: 1.7vmax;
   font-weight: 400;
-  padding: 0.5vmax 0.8vmax;
+  padding: 0.8vmax 1vmax;
   text-align: start;
+  text-justify: center !important;
   white-space: initial;
 }
 .colorBase {
@@ -153,5 +153,13 @@ svg {
 }
 .cambioColor {
   background: rgb(0, 0, 0, 0.7) !important;
+}
+.achicar {
+  max-width: 90% !important;
+}
+.botonQuestions {
+  right: 2.5%;
+  top: 0;
+  bottom: 0;
 }
 </style>

@@ -78,12 +78,12 @@
   position: relative;
 }
 .achicar {
-  width: 80%;
+  max-width: 90%;
 }
 #tituloH {
   width: 53%;
   height: 14.5vmax;
-  margin: 6vmax auto;
+  margin: 9vmax auto auto;
   line-height: 6vmax;
   background: linear-gradient(10deg, black 10%, rgba(83, 202, 251, 0.5), white);
   background-size: cover;
@@ -120,7 +120,7 @@ p::first-letter {
   right: 0;
   left: 0;
   margin: auto;
-  width: 70.4%;
+  width: 80.5%;
   height: 100%;
 }
 .containerTitulo::after {
@@ -136,8 +136,8 @@ p::first-letter {
   height: 100%;
 }
 video {
-  width: 70%;
-  height: 70%;
+  width: 80%;
+  height: 80%;
   transition: 0.5s ease-in-out;
   z-index: 11;
 }
