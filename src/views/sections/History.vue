@@ -4,11 +4,11 @@
       <div class="container achicar">
         <section>
           <h1 id="tituloH">Make history</h1>
-          <div class="filtro8"></div>
-          <div class="filtro9"></div>
-          <div class="filtro10"></div>
-          <div class="filtro11"></div>
-          <div class="filtro12"></div>
+          <div class="filtroA"></div>
+          <div class="filtroB"></div>
+          <div class="filtroC"></div>
+          <div class="filtroD"></div>
+          <div class="filtroE"></div>
           <div
             style="border-radius: 5vmax; background: rgb(0, 0, 0, 0.4); padding: 5%;"
           >
@@ -40,11 +40,11 @@
         </section>
       </div>
       <section class="containerVideo">
-        <div class="filtro8"></div>
-        <div class="filtro9"></div>
-        <div class="filtro10"></div>
-        <div class="filtro11"></div>
-        <div class="filtro12"></div>
+        <div class="filtroA"></div>
+        <div class="filtroB"></div>
+        <div class="filtroC"></div>
+        <div class="filtroD"></div>
+        <div class="filtroE"></div>
         <div class="containerTitulo"></div>
         <div class="videoMobile"></div>
         <video
@@ -138,77 +138,6 @@ p::first-letter {
 video {
   width: 80%;
   height: 80%;
-  transition: 0.5s ease-in-out;
   z-index: 11;
-}
-.filtro8 {
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  left: 10%;
-  top: 105px;
-  background: rgba(83, 202, 251, 0.5);
-  filter: blur(4px);
-  z-index: 5;
-  transition: 0.5s ease-in-out;
-}
-.filtro8:hover {
-  transform: scale(1.5, 1.5);
-}
-.filtro9 {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  left: 21%;
-  top: 19%;
-  background: rgba(83, 202, 251, 0.5);
-  z-index: 5;
-  transition: 0.5s ease-in-out;
-}
-.filtro9:hover {
-  filter: blur(1px);
-  transform: scale(1.5, 1.5);
-}
-.filtro10 {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  left: 604px;
-  top: 340px;
-  background: rgba(83, 202, 251, 0.5);
-  z-index: 5;
-  transition: 0.5s ease-in-out;
-}
-.filtro10:hover {
-  filter: blur(1px);
-  transform: scale(1.5, 1.5);
-}
-.filtro11 {
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  left: 735px;
-  top: 300px;
-  background: rgba(83, 202, 251, 0.5);
-  filter: blur(4px);
-  z-index: 5;
-  transition: 0.5s ease-in-out;
-}
-.filtro11:hover {
-  transform: scale(1.5, 1.5);
-}
-.filtro12 {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  left: 425px;
-  top: 133px;
-  background: rgba(83, 202, 251, 0.5);
-  z-index: 5;
-  transition: 0.5s ease-in-out;
-}
-.filtro12:hover {
-  filter: blur(1px);
-  transform: scale(1.5, 1.5);
 }
 </style>

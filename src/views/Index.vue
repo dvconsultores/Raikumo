@@ -116,15 +116,6 @@ export default {
   padding: 1vmax;
   position: relative;
 }
-.slider {
-  scroll-snap-type: mandatory;
-}
-#FAQ,
-#history,
-#team,
-#jobs {
-  scroll-snap-align: center;
-}
 /*
 video {
   position: fixed;

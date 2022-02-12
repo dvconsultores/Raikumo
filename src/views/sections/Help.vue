@@ -31,9 +31,7 @@
             class="md-icon-button botonQuestions"
             style="background-color: transparent !important; box-shadow: none !important; position: absolute"
           >
-            <md-icon
-              style="font-size: 2.5vmax !important; height: 30%; transition: ease 1s !important"
-            >
+            <md-icon style="font-size: 2.5vmax !important; height: 30%">
               {{ item.icono }}
             </md-icon>
           </md-button>

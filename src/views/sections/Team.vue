@@ -3,15 +3,15 @@
     <div class="filtro3"></div>
     <section class="container containerGrid">
       <section class="section grid">
-        <div class="filtro8"></div>
-        <div class="filtro9"></div>
-        <div class="filtro10"></div>
-        <div class="filtro11"></div>
-        <div class="filtro12"></div>
-        <div class="filtro13"></div>
-        <div class="filtro14"></div>
-        <div class="filtro16"></div>
-        <div class="filtro17"></div>
+        <div class="filtroA"></div>
+        <div class="filtroB"></div>
+        <div class="filtroC"></div>
+        <div class="filtroD"></div>
+        <div class="filtroE"></div>
+        <div class="filtroF"></div>
+        <div class="filtroG"></div>
+        <div class="filtroI"></div>
+        <div class="filtroJ"></div>
         <aside
           class="containerTeam"
           v-for="(item, index) in dataTeam"
@@ -224,6 +224,11 @@ export default {
   background: center no-repeat;
   background-size: cover;
 }
+.containerFoto:hover {
+  transition: 0.5s ease-in-out;
+  transform: scale(1.1, 1.1);
+  box-shadow: 0px 0px 1px rgb(110, 110, 17), 0px 0px 15px rgb(110, 110, 17);
+}
 .containerDatos {
   display: inline-block;
   margin-left: 3%;
@@ -254,146 +259,5 @@ export default {
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.filtro3 {
-  position: absolute;
-  width: 30vmax;
-  height: 28vmax;
-  right: 10vmax;
-  top: 658.63px;
-  background: #f1a441;
-  opacity: 0.2;
-  filter: blur(200px);
-  transition: 0.5s ease-in-out;
-}
-.filtro3:hover {
-  transform: scale(1.5, 1.5);
-}
-.filtro8 {
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  left: 10%;
-  top: 105px;
-  background: rgba(83, 202, 251, 0.5);
-  filter: blur(4px);
-  z-index: 5;
-  transition: 0.5s ease-in-out;
-}
-.filtro8:hover {
-  transform: scale(1.5, 1.5);
-}
-.filtro9 {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  left: 21%;
-  top: 19%;
-  background: rgba(83, 202, 251, 0.5);
-  z-index: 5;
-  transition: 0.5s ease-in-out;
-}
-.filtro9:hover {
-  filter: blur(1px);
-  transform: scale(1.5, 1.5);
-}
-.filtro10 {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  left: 604px;
-  top: 340px;
-  background: rgba(83, 202, 251, 0.5);
-  z-index: 5;
-  transition: 0.5s ease-in-out;
-}
-.filtro10:hover {
-  filter: blur(1px);
-  transform: scale(1.5, 1.5);
-}
-.filtro11 {
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  left: 735px;
-  top: 300px;
-  background: rgba(83, 202, 251, 0.5);
-  filter: blur(4px);
-  z-index: 5;
-  transition: 0.5s ease-in-out;
-}
-.filtro11:hover {
-  transform: scale(1.5, 1.5);
-}
-.filtro12 {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  left: 425px;
-  top: 133px;
-  background: rgba(83, 202, 251, 0.5);
-  z-index: 5;
-  transition: 0.5s ease-in-out;
-}
-.filtro12:hover {
-  filter: blur(1px);
-  transform: scale(1.5, 1.5);
-}
-.filtro13 {
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  right: 10%;
-  bottom: 105px;
-  background: rgba(83, 202, 251, 0.5);
-  filter: blur(4px);
-  z-index: 5;
-  transition: 0.5s ease-in-out;
-}
-.filtro13:hover {
-  transform: scale(1.5, 1.5);
-}
-.filtro14 {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  right: 21%;
-  bottom: 19%;
-  background: rgba(83, 202, 251, 0.5);
-  z-index: 5;
-  transition: 0.5s ease-in-out;
-}
-.filtro14:hover {
-  filter: blur(1px);
-  transform: scale(1.5, 1.5);
-}
-.filtro16 {
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  right: 735px;
-  bottom: 300px;
-  background: rgba(83, 202, 251, 0.5);
-  filter: blur(4px);
-  z-index: 5;
-  transition: 0.5s ease-in-out;
-}
-.filtro16:hover {
-  transform: scale(1.5, 1.5);
-}
-.filtro17 {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  right: 425px;
-  bottom: 133px;
-  background: rgba(83, 202, 251, 0.5);
-  z-index: 5;
-  transition: 0.5s ease-in-out;
-}
-.filtro17:hover {
-  filter: blur(1px);
-  transform: scale(1.5, 1.5);
 }
 </style>
