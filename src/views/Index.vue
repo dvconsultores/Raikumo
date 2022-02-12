@@ -120,15 +120,59 @@ export default {
   margin-bottom: 6vmax;
 }
 #history {
+  position: relative;
   padding-top: 6vmax;
-  border-top: 0.4em rgba(0, 0, 0, 0.6) solid;
   margin-bottom: 12vmax;
 }
+#history:after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 0.7em;
+  background: linear-gradient(
+    100deg,
+    black 10%,
+    rgba(83, 202, 251, 0.4),
+    black
+  );
+  border-radius: 35%;
+}
 #team {
+  position: relative;
   padding-top: 4vmax;
   padding-bottom: 2vmax;
-  border-bottom: 0.4em rgba(0, 0, 0, 0.6) solid;
-  border-top: 0.4em rgba(0, 0, 0, 0.6) solid;
+}
+#team:after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 0.7em;
+  background: linear-gradient(
+    100deg,
+    black 10%,
+    rgba(83, 202, 251, 0.4),
+    black
+  );
+  border-radius: 35%;
+}
+#team:before {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  height: 0.7em;
+  background: linear-gradient(
+    100deg,
+    black 10%,
+    rgba(83, 202, 251, 0.4),
+    black
+  );
+  border-radius: 35%;
 }
 /*
 video {
