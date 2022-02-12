@@ -206,7 +206,6 @@ export default {
   grid-template-areas: "1 2 3";
   grid-template-columns: 34% 35% 34%;
   width: 100%;
-  margin-top: 20vh;
 }
 .containerTeam {
   width: 100%;

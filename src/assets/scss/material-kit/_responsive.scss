@@ -11,17 +11,33 @@
         }
     }
 }
+/* cambios para pantallas grandes */
 @media (min-width: 1600px) {
   
 }
+
+/* cmbios para bordes de secciones en mobile */
+@media (max-width: 600px) {
+  #FAQ {
+    margin-bottom: 3vmax !important;
+  }
+  #history {
+    padding-top: 8vmax !important;
+    margin-bottom: 12vmax !important;
+  }
+  #team {
+    padding-top: 0vmax !important;
+  }
+}
+
 /*  cambios para muy pequenito en histoia  */
 
 @media (max-width: 500px) { 
-.achicar {
-  width: 100% !important;
-  padding: auto !important;
-  margin: auto !important;
-}
+  .achicar {
+    width: 100% !important;
+    padding: auto !important;
+    margin: auto !important;
+  }
 }
 
 @media (max-width: 300px) { 
@@ -53,7 +69,7 @@
     }
 
     .espaciotop {
-      margin-top: 5vmax !important;
+      margin-top: 6vmax !important;
     }
 
     #tituloH {

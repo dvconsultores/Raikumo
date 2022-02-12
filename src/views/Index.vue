@@ -116,6 +116,20 @@ export default {
   padding: 1vmax;
   position: relative;
 }
+#FAQ {
+  margin-bottom: 6vmax;
+}
+#history {
+  padding-top: 6vmax;
+  border-top: 0.4em rgba(0, 0, 0, 0.6) solid;
+  margin-bottom: 12vmax;
+}
+#team {
+  padding-top: 4vmax;
+  padding-bottom: 2vmax;
+  border-bottom: 0.4em rgba(0, 0, 0, 0.6) solid;
+  border-top: 0.4em rgba(0, 0, 0, 0.6) solid;
+}
 /*
 video {
   position: fixed;

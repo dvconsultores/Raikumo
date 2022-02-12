@@ -100,7 +100,7 @@
   max-width: 90%;
 }
 .espacioTop {
-  margin-top: 3vmax;
+  margin-top: 8vmax;
   position: relative;
 }
 #tituloH {
