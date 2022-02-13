@@ -3,7 +3,6 @@
     id="toolbar"
     md-elevation="0"
     class="md-transparent md-absolute"
-    :color-on-scroll="colorOnScroll"
     style="background: black !important"
   >
     <!--///////////////////////////-ESCRITORIO-/////////////////////////////////////-->
@@ -17,15 +16,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </md-button>
-      <!--v-for="(linkEscritorio, index) in dataEscritorio"
-        v-bind:key="index"-->
+
       <md-list-item
         class="eliminarMobile"
         href="#history"
         @click="scrollToElement()"
       >
-        <!--<i class="material-icons">content_paste</i> ejemplo de icono para usar
-        HAY UN ATRIBUTO  v-if="showDownload"   QUE NI IDEA PARA QUE SIRVE-->
         <p class="centrarMobile">History</p>
       </md-list-item>
 
@@ -42,8 +38,7 @@
         href="/raikumo"
         @click="scrollToElement()"
       ></md-button>
-      <!--v-for="(linkEscritorio, index) in dataEscritorio"
-        v-bind:key="index"-->
+
       <md-list-item
         class="eliminarMobile"
         href="#FAQ"
@@ -74,7 +69,6 @@
               data-toggle="dropdown"
             >
               <img src="@/assets/team/monkey.jpg" alt="Circle Image" />
-              <!--<img :src="img" alt="Circle Image" />-->
             </div>
             <ul class="dropdown-menu dropdown-menu-right">
               <li class="dropdown-header">You account</li>
@@ -124,8 +118,6 @@
       <div class="md-collapse">
         <div class="md-collapse-wrapper">
           <mobile-menu nav-mobile-section-start="true">
-            <!--v-for="(linkMobile, index) in dataMobile"
-              v-bind:key="index"-->
             <md-list-item href="#history" @click="scrollToElement()">
               <p class="centrarMobile">History</p>
             </md-list-item>
@@ -152,7 +144,6 @@
                       data-toggle="dropdown"
                     >
                       <img src="@/assets/team/monkey.jpg" alt="Circle Image" />
-                      <!--<img :src="img" alt="Circle Image" />-->
                     </div>
                     <ul class="dropdown-menu dropdown-menu-right">
                       <li class="dropdown-header">You account</li>
@@ -188,12 +179,6 @@
                 </div>
               </a>
             </li>
-            <!--
-            <md-list-item href="javascript:void(0)" @click="scrollToElement()">
-              <i class="material-icons centrarMobile">account_circle</i>
-              <p class="hidden-lg centrarMobile">Near Wallet</p>
-            </md-list-item>
-            -->
           </mobile-menu>
 
           <!--ejemplo de listas   <li class="md-list-item" v-if="!showDownload">
@@ -254,37 +239,11 @@ import MobileMenu from "@/layout/MobileMenu";
 export default {
   data() {
     return {
-      toggledClass: false,
-      dataMobile: ["History", "FAQ", "Team", "Jobs"],
-      dataEscritorio: [
-        ["history", "FAQ"],
-        ["Team", "Jobs"]
-      ]
+      toggledClass: false
     };
   },
   components: {
     MobileMenu
-  },
-  props: {
-    type: {
-      type: String,
-      default: "white",
-      validator(value) {
-        return [
-          "white",
-          "default",
-          "primary",
-          "danger",
-          "success",
-          "warning",
-          "info"
-        ].includes(value);
-      }
-    },
-    colorOnScroll: {
-      type: Number,
-      default: 0
-    }
   },
   computed: {
     showDownload() {
