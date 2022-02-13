@@ -88,9 +88,9 @@ export default {
 .parallaxIndex {
   overflow: hidden;
   background: center no-repeat fixed url("../assets/img/fondo.jpg");
+  -webkit-background: center no-repeat fixed url("../assets/img/fondo.jpg");
+  -moz-osx-background: center no-repeat fixed url("../assets/img/fondo.jpg");
   background-size: cover;
-  -webkit-font-background: center no-repeat fixed;
-  -moz-osx-font-background: center no-repeat fixed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
