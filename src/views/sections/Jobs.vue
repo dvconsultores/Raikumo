@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper parallaxJobs" style="background: transparent !important">
+  <div class="parallaxJobs">
     <div class="espacioTop"></div>
     <div class="container achicar">
       <section>
@@ -88,14 +88,9 @@
 <style scoped>
 .parallaxJobs {
   text-align: center;
-  background: center no-repeat fixed;
-  -webkit-font-background: center no-repeat fixed;
-  -moz-osx-font-background: center no-repeat fixed;
-  background-size: cover;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(2, 2, 2);
 }
 .achicar {
   max-width: 90%;

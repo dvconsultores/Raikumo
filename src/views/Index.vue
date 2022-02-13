@@ -1,12 +1,9 @@
 <template>
   <div>
     <div class="espacioArriba"></div>
-    <div class="wrapper parallaxIndex">
+    <div class="parallaxIndex">
       <intro id="intro"></intro>
-      <main
-        class="main main-raised slider"
-        style="background: transparent; box-shadow: none"
-      >
+      <main class="main-raised">
         <div class="espacio"></div>
         <!--////////////////////-->
         <help id="FAQ"></help>
@@ -89,15 +86,13 @@ export default {
   margin-top: 15px;
 }
 .parallaxIndex {
-  background: center no-repeat fixed;
-  -webkit-font-background: center no-repeat fixed;
-  -moz-osx-font-background: center no-repeat fixed;
-  background-size: cover;
   overflow: hidden;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   background: center no-repeat fixed url("../assets/img/fondo.jpg");
   background-size: cover;
+  -webkit-font-background: center no-repeat fixed;
+  -moz-osx-font-background: center no-repeat fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .espacio {
   padding: 8vmax;

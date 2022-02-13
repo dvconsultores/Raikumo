@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper parallaxHistory">
+  <div class="parallaxHistory">
     <div class="main-raised">
       <div class="container achicar">
         <section>
@@ -41,10 +41,7 @@
       </div>
       <section class="containerVideo">
         <div class="filtroA"></div>
-        <div class="filtroB"></div>
-        <div class="filtroC"></div>
         <div class="filtroD"></div>
-        <div class="filtroE"></div>
         <div class="containerTitulo"></div>
         <div class="videoMobile"></div>
         <video
@@ -65,11 +62,6 @@
 <style scoped>
 .parallaxHistory {
   text-align: center;
-  background: center no-repeat fixed;
-  -webkit-font-background: center no-repeat fixed;
-  -moz-osx-font-background: center no-repeat fixed;
-  background-size: cover;
-  overflow: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

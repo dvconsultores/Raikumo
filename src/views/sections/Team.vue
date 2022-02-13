@@ -251,10 +251,6 @@ export default {
 }
 
 .parallaxHistory {
-  background: center no-repeat fixed;
-  -webkit-font-background: center no-repeat fixed;
-  -moz-osx-font-background: center no-repeat fixed;
-  background-size: cover;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
