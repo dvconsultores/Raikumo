@@ -1,9 +1,5 @@
 <template>
-  <footer
-    class="footer"
-    :class="{ [`footer-${type}`]: type }"
-    style="background-color: black"
-  >
+  <footer class="footer" style="background-color: black">
     <div class="container">
       <nav></nav>
       <div class="copyright">

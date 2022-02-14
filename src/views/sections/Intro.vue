@@ -6,15 +6,18 @@
         :style="Image"
       >
         <h1 class="title blanco">
-          Discover, Collect, <br />and Read Amazing Headline
+          Discover, Collect and play a Card Game
         </h1>
         <h4>
-          lorem parsem ipdum indum mindum quimsun bindum dasdun
+          Built on the NEAR Blockchain
         </h4>
         <br />
         <div class="botoncito">
-          <md-button href="" class="md-info md-lg" target="_blank">
-            <span class="texto-boton">subscribe</span>
+          <md-button class="md-info md-lg" href="" target="_blank">
+            <span class="texto-boton">Login with Near</span>
+            <md-tooltip class="tooltip" md-direction="right">
+              Coming soon!
+            </md-tooltip>
           </md-button>
         </div>
       </div>
@@ -25,28 +28,16 @@
         <div class="img" :style="Image" />
       </div>
     </aside>
-
-    <aside id="bottom">
-      <div id="bloqueIzquierda">
-        <p class="bloques">123k</p>
-        <span class="bloques">value</span>
-      </div>
-
-      <div id="bloqueCentro">
-        <p class="bloques">123k</p>
-        <span class="bloques">value</span>
-      </div>
-
-      <div id="bloqueDerecha">
-        <p class="bloques">123k</p>
-        <span class="bloques">value</span>
-      </div>
-    </aside>
   </parallax>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      first: false
+    };
+  },
   props: {
     image: {
       type: String,
@@ -71,6 +62,7 @@ export default {
   color: black !important;
   font-weight: 600;
   font-size: 1.5vmax;
+  text-transform: none !important;
 }
 .botoncito {
   visibility: visible;
@@ -201,5 +193,10 @@ p.bloques {
   grid-template-areas: "left right" "left right" "bottom bottom";
   grid-template-columns: 55% 40%;
   margin-left: 4%;
+}
+.tooltip {
+  background: rgb(0, 0, 0, 0.8) !important;
+  backdrop-filter: blur(5px) !important;
+  color: white !important;
 }
 </style>
