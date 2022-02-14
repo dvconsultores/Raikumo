@@ -180,43 +180,6 @@
               </a>
             </li>
           </mobile-menu>
-
-          <!--ejemplo de listas   <li class="md-list-item" v-if="!showDownload">
-              <md-list>
-                <a
-                  href="javascript:void(0)"
-                  class="md-list-item-router md-list-item-container md-button-clean dropdown"
-                >
-                  <div class="md-list-item-content">
-                    <drop-down direction="down">
-                      <md-button
-                        slot="title"
-                        class="md-button md-button-link md-white md-simple dropdown-toggle"
-                        data-toggle="dropdown"
-                      >
-                        <i class="material-icons">apps</i>
-                        <p>Components</p>
-                      </md-button>
-                      <ul class="dropdown-menu dropdown-with-icons">
-                        <li>
-                          <a href="#/">
-                            <i class="material-icons">layers</i>
-                            <p>All Components</p>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="https://demos.creative-tim.com/vue-material-kit/documentation/"
-                          >
-                            <i class="material-icons">content_paste</i>
-                            <p>Documentation</p>
-                          </a>
-                        </li>
-                      </ul>
-                    </drop-down>
-                  </div>
-                </a>
-              </li>-->
         </div>
       </div>
     </div>
@@ -224,17 +187,6 @@
 </template>
 
 <script>
-/*
-let resizeTimeout;
-function resizeThrottler(actualResizeHandler) {
-  if (!resizeTimeout) {
-    resizeTimeout = setTimeout(() => {
-      resizeTimeout = null;
-      actualResizeHandler;
-    }, 66);
-  }
-}
-*/
 import MobileMenu from "@/layout/MobileMenu";
 export default {
   data() {
@@ -278,26 +230,7 @@ export default {
         element_id.scrollIntoView({ block: "end", behavior: "smooth" });
       }
     }
-    /*
-    handleScroll() {
-      let verScroll = window.pageYOffset;
-      window.onscroll = function() {
-        let scrollActual = window.pageYOffset;
-        if (verScroll > scrollActual) {
-          document.getElementById("toolbar").style.top = "0";
-        } else {
-          document.getElementById("toolbar").style.top = "-60px";
-        }
-      };
-    },
-    scrollListener() {
-      resizeThrottler(this.handleScroll());
-    },*/
   },
-  /*
-  mounted() {
-    document.addEventListener("scroll", this.scrollListener);
-  },*/
   beforeDestroy() {
     document.removeEventListener("scroll", this.scrollListener);
   }
