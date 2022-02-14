@@ -37,8 +37,10 @@
     }
 }
 /* cambios para pantallas grandes */
-@media (min-width: 1600px) {
-  
+@media (min-width: 1500px) {
+  .preguntas {
+    padding: 0.2vmax 1vmax !important;
+  }
 }
 
 /* cmbios para bordes de secciones en mobile */

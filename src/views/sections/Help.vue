@@ -2,7 +2,7 @@
   <section class="section">
     <div class="container achicar">
       <md-toolbar
-        style="justify-content: start;"
+        style="justify-content: start"
         class="toolbarQuestions colorBase"
         v-for="(item, index) in dataQuestion"
         v-bind:key="index"
