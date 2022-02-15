@@ -6,7 +6,7 @@
         :style="Image"
       >
         <h1 class="title blanco">
-          Discover, Collect and play a Card Game
+          Discover, Collect and play a great Card Game
         </h1>
         <h4>
           Built on the NEAR Blockchain
