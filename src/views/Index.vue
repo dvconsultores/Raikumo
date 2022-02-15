@@ -103,7 +103,7 @@ export default {
   position: relative;
 }
 #FAQ {
-  margin-bottom: 6vmax;
+  margin-bottom: 4vmax;
 }
 #history {
   position: relative;

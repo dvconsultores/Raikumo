@@ -44,16 +44,47 @@
 }
 
 /* cmbios para bordes de secciones en mobile */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #FAQ {
-    margin-bottom: 3vmax !important;
+    margin-bottom: 0vmax !important;
   }
   #history {
-    padding-top: 8vmax !important;
-    margin-bottom: 12vmax !important;
+    padding-top: 6vmax !important;
   }
   #team {
     padding-top: 0vmax !important;
+  }
+}
+@media (max-width: 600px) {
+  #history {
+    padding-top: 10vmax !important;
+  }
+}
+@media (max-width: 400px) {
+  #FAQ {
+    margin-bottom: 0vmax !important;
+  }
+  #history {
+    padding-top: 8vmax !important;
+  }
+}
+@media (max-width: 375px) {
+  #FAQ {
+    margin-bottom: 0vmax !important;
+  }
+  #history {
+    padding-top: 12vmax !important;
+    margin-bottom: 12vmax !important;
+  }
+}
+
+/* cmbios para bordes de secciones en pantallas grandes */
+@media (min-width: 1400px) {
+  #FAQ {
+    margin-bottom: 4vmax !important;
+  }
+  #history {
+    padding-top: 5vmax !important;
   }
 }
 
@@ -77,6 +108,8 @@
 /*          Changes for small display      */
 
 @media (max-width: 991px){
+
+
     
     .filtro8 {
       display: none !important;
@@ -571,6 +604,12 @@
     .navbar-toggle:hover,.navbar-toggle:focus {
         background-color: transparent !important;
     }
+}
+
+@media (max-width: 300) {
+  .raikumo {
+    background-size: 180% !important;
+  }
 }
 
 @media (max-width: 768px){
