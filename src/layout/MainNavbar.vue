@@ -250,7 +250,7 @@ export default {
   display: flex;
 }
 .raikumo {
-  /* background: center no-repeat url("../assets/logos/raikumo long.png"); */
+  background: center no-repeat url("../assets/logos/raikumo long.png");
   background-size: cover;
   position: relative;
   width: 20%;
