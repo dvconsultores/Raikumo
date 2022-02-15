@@ -143,9 +143,21 @@
     height: 100% !important;
     border-radius: 30% !important;
   }
-
   #right {
     display: none !important;
+  }
+  #bottom {
+    justify-content: center !important;
+  }
+  #left {
+    margin: auto !important;
+    justify-content: center !important;
+    height: 100% !important;
+  }
+  .botoncito {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1vmax;
   }
   .contenedor-portada {
     grid-template-areas: "left" "bottom" !important;
@@ -154,8 +166,8 @@
     margin-left: 0% !important;
   }
   .imgMobile {
-    width: 90% !important;
-    height: 50% !important;
+    width: 85% !important;
+    height: 100% !important;
     visibility: visible !important;
   }
   .img {
@@ -186,42 +198,16 @@
     opacity: 1 !important;
   }
 
-  #bottom {
-    justify-content: center !important;
-  }
-  #bloqueIzquierda {
-    margin-top: 5% !important;
-    width: 10vmax !important;
-    z-index: 10 !important;
-  }
-  #bloqueCentro {
-    margin-top: 5% !important;
-    width: 15vmax !important;
-    z-index: 10 !important;
-  }
-  #bloqueDerecha {
-    margin-top: 5% !important;
-    width: 10vmax !important;
-    z-index: 10 !important;
-  }
-  #left {
-    margin: auto !important;
-    justify-content: center !important;
-  }
-  .botoncito {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1vmax;
-  }
   .textoIntro h1 {
     text-align: center !important;
+    font-size: 4vmax !important;
   }
   .textoIntro h4 {
     text-align: center !important;
   }
 
   .espacio {
-    padding: 4vmax !important;
+    padding: 1vmax !important;
   }
 
   .containerGrid {
