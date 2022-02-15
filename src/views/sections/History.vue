@@ -39,7 +39,7 @@
           </div>
         </section>
       </div>
-      <section class="containerVideo">
+      <!-- <section class="containerVideo">
         <div class="filtroA"></div>
         <div class="filtroD"></div>
         <div class="containerTitulo"></div>
@@ -54,7 +54,7 @@
         >
           your browser does not support HTML5
         </video>
-      </section>
+      </section> -->
     </div>
   </div>
 </template>
