@@ -3,64 +3,12 @@
 </template>
 
 <style scoped>
-.parallaxJobs {
-  text-align: center;
-  overflow: hidden;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.achicar {
-  max-width: 90%;
-}
-.espacioTop {
-  margin-top: 8vmax;
-  position: relative;
-}
-.espaciobottom {
-  margin-bottom: 5vmax;
-  position: relative;
-}
-#tituloH {
-  width: 47%;
-  height: 7vmax;
-  margin: 2vmax auto;
-  line-height: 6vmax;
-  background: linear-gradient(10deg, black 10%, rgba(83, 202, 251, 0.5), white);
-  background-size: cover;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif !important;
-}
-h1 {
-  font-weight: bold;
-  font-size: 10vmax;
-}
-h2 {
-  text-align: center;
-  line-height: 35px;
-  margin-top: 5%;
-  margin-bottom: 4vmax;
-}
-p {
-  text-align: center;
-  font-size: 2vmax;
-  line-height: 2.8vmax;
-  margin-bottom: 3vmax;
-}
-aside p {
-  line-height: 5%;
-  margin-bottom: 7vmax;
-}
+.parallaxJobs{text-align:center;overflow:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.achicar{max-width:90%}.espacioTop{margin-top:8vmax;position:relative}.espaciobottom{margin-bottom:5vmax;position:relative}#tituloH{width:47%;height:7vmax;margin:2vmax auto;line-height:6vmax;background:linear-gradient(10deg,#000 10%,rgba(83,202,251,.5),#fff);background-size:cover;background-clip:text;-webkit-background-clip:text;color:transparent;font-family:-apple-system,BlinkMacSystemFont,Arial,sans-serif !important}h1{font-weight:700;font-size:10vmax}h2{text-align:center;line-height:35px;margin-top:5%;margin-bottom:4vmax}p{text-align:center;font-size:2vmax;line-height:2.8vmax;margin-bottom:3vmax}aside p{line-height:5%;margin-bottom:7vmax}.textoFinal{text-align:end;margin-top:5%}
 .containerTexto {
   margin: auto;
   padding: 5%;
   border-radius: 5vmax;
   background: rgb(0, 0, 0, 0.4);
   width: 100%;
-}
-.textoFinal {
-  text-align: end;
-  margin-top: 5%;
 }
 </style>

@@ -3,92 +3,10 @@
 </template>
 
 <script>
-export default {
-  props: {
-    video: {
-      type: String,
-      default: require("@/assets/videos/raikumo.mp4")
-    }
-  },
-  computed: {
-    Video() {
-      return `${this.video}`;
-    }
-  }
-};
+export default{props:{video:{type:String,default:require("@/assets/videos/raikumo.mp4")}},computed:{Video(){return `${this.video}`;}}};
 </script>
 
 <style scoped>
-.parallaxHistory {
-  text-align: center;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.espacioBottom {
-  margin-top: 90vmax;
-  position: relative;
-}
-.achicar {
-  max-width: 90%;
-}
-#tituloH {
-  width: 53%;
-  height: 14.5vmax;
-  margin: 9vmax auto auto;
-  line-height: 6vmax;
-  background: linear-gradient(10deg, black 10%, rgba(83, 202, 251, 0.5), white);
-  background-size: cover;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif !important;
-}
-h1 {
-  font-weight: bold;
-  font-size: 10vmax;
-}
-p {
-  word-spacing: 6px;
-  font-size: 2vmax;
-  line-height: 2.8vmax;
-}
-p::first-letter {
-  font-size: 5vmax !important;
-  font-weight: 600 !important;
-  color: rgba(83, 202, 251, 0.5);
-}
-.containerVideo {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-.containerTitulo {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  width: 80.5%;
-  height: 100%;
-}
-.containerTitulo::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  border: 3px rgb(110, 110, 17) solid;
-  width: 100%;
-  height: 100%;
-}
-video {
-  width: 80%;
-  height: 80%;
-  z-index: 11;
-}
+.parallaxHistory{text-align:center;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.espacioBottom{margin-top:90vmax;position:relative}.achicar{max-width:90%}#tituloH{width:53%;height:14.5vmax;margin:9vmax auto auto;line-height:6vmax;background:linear-gradient(10deg,#000 10%,rgba(83,202,251,.5),#fff);background-size:cover;background-clip:text;-webkit-background-clip:text;color:transparent;font-family:-apple-system,BlinkMacSystemFont,Arial,sans-serif !important}h1{font-weight:700;font-size:10vmax}p{word-spacing:6px;font-size:2vmax;line-height:2.8vmax}p:first-letter {font-size:5vmax !important;font-weight:600 !important;color:rgba(83,202,251,.5)}.containerVideo{position:relative;display:flex;align-items:center;justify-content:center;width:100%}.containerTitulo{position:absolute;top:0;bottom:0;right:0;left:0;margin:auto;width:80.5%;height:100%}.containerTitulo:after{content:"";position:absolute;top:0;bottom:0;right:0;left:0;margin:auto;border:3px #6e6e11 solid;width:100%;height:100%}
+video{width:80%;height:80%;z-index:11}
 </style>

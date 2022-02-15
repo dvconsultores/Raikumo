@@ -253,41 +253,5 @@ export default {
 </script>
 
 <style scoped>
-* {
-  z-index: 10;
-}
-.blanco {
-  color: white !important;
-}
-.sectionFlex {
-  justify-content: center;
-  width: 90%;
-  display: flex;
-}
-.raikumo {
-  position: relative;
-  width: 20%;
-}
-.logoRaikumo {
-  background: center no-repeat url("../assets/logos/raikumo long.png");
-  background-size: cover;
-}
-.centrarMobile {
-  margin: auto !important;
-}
-.eliminarMobile {
-  display: block;
-  margin: 0 10px;
-}
-.eliminarNavbar {
-  display: none;
-}
-.foto {
-  background: center no-repeat;
-  background-size: cover;
-}
-.moverBoton {
-  position: absolute !important;
-  top: 10%;
-}
+*{z-index:10}.blanco{color:#fff !important}.sectionFlex{justify-content:center;width:90%;display:flex}.raikumo{position:relative;width:20%}.logoRaikumo{background:center no-repeat url("../assets/logos/raikumo long.png");background-size:cover}.centrarMobile{margin:auto !important}.eliminarMobile{display:block;margin:0 10px}.eliminarNavbar{display:none}.foto{background:center no-repeat;background-size:cover}.moverBoton{position:absolute !important;top:10%}
 </style>

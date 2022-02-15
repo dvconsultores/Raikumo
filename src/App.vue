@@ -1,80 +1,9 @@
 <template>
-  <div id="material-kit">
-    <div :class="Filtro1"></div>
-    <div :class="Filtro2"></div>
-    <div :class="Filtro3"></div>
-    <div :class="Filtro4"></div>
-    <div :class="Filtro5"></div>
-    <div :class="Filtro6"></div>
-    <div :class="Filtro7"></div>
-    <div :class="Filtro8"></div>
-    <div :class="Filtro9"></div>
-    <div :class="Filtro10"></div>
-    <div :class="{ 'nav-open': NavbarStore.showNavbar }">
-      <router-view name="header" />
-      <div>
-        <router-view />
-      </div>
-      <router-view name="footer" />
-    </div>
-  </div>
+  <div id="material-kit"><div :class="Filtro1"></div><div :class="Filtro2"></div><div :class="Filtro3"></div><div :class="Filtro4"></div><div :class="Filtro5"></div><div :class="Filtro6"></div><div :class="Filtro7"></div><div :class="Filtro8"></div><div :class="Filtro9"></div><div :class="Filtro10"></div><div :class="{ 'nav-open': NavbarStore.showNavbar }"><router-view name="header"/><div><router-view/></div><router-view name="footer"/></div></div>
 </template>
 
 <script>
-export default {
-  computed: {
-    Filtro1() {
-      return {
-        filtro1: true
-      };
-    },
-    Filtro2() {
-      return {
-        filtro2: true
-      };
-    },
-    Filtro3() {
-      return {
-        filtro3: true
-      };
-    },
-    Filtro4() {
-      return {
-        filtro4: true
-      };
-    },
-    Filtro5() {
-      return {
-        filtro5: true
-      };
-    },
-    Filtro6() {
-      return {
-        filtro6: true
-      };
-    },
-    Filtro7() {
-      return {
-        filtro7: true
-      };
-    },
-    Filtro8() {
-      return {
-        filtro8: true
-      };
-    },
-    Filtro9() {
-      return {
-        filtro9: true
-      };
-    },
-    Filtro10() {
-      return {
-        filtro10: true
-      };
-    }
-  }
-};
+  export default{computed:{Filtro1(){return{filtro1:true};},Filtro2(){return{filtro2:true};},Filtro3(){return{filtro3:true};},Filtro4(){return{filtro4:true};},Filtro5(){return{filtro5:true};},Filtro6(){return{filtro6:true};},Filtro7(){return{filtro7:true};},Filtro8(){return{filtro8:true};},Filtro9(){return{filtro9:true};},Filtro10(){return{filtro10:true};}}};
 </script>
 
 <style scoped>
