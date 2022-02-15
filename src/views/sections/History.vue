@@ -1,6 +1,65 @@
 <template>
-  <div class="parallaxHistory"><div class="main-raised"><div class="container achicar"><section><h1 id="tituloH">Make history</h1><div style="border-radius: 5vmax; background: rgb(0, 0, 0, 0.4); padding: 5%;"><p>Japan – 2053 After several natural disasters,the Japanese economic market was driven into a huge inflationary crisis by enormous repair costs. With the promise that a new currency could bring this inflation down,the Japanese government was giving all the necessary resources and its last remaining financial mediums to an organization called "RAIKUMO" in hope of saving the country. But they took advantage of these funds and shortly thereafter are ruling the government instead of the government ruling them. They later called themselves "RAIKUMO - Saviors of the rising sun" even though they did anything but save the country. People were suffering because of their broken promises and still they gave these people hope. They started to conduct experiments. At first it was just some in nature,but after one went wrong and caused a never-ending storm in the clouds over Japan,they switched to experiments on humans. The company which couldn’t keep their promises manipulated those who suffered from the actions of their own action and promised them a problem-free life if they would only participate in the experiments. Most of these people now lie lifeless 6 feet underground or are still used as test subjects. Nothing changed for years,RAIKUMO kept destroying the country and no one could do anything about it,but little did they know their own creation could one day turn against them. </p></div></section></div><section class="containerVideo"><div class="containerTitulo"></div><div class="videoMobile"></div><video src="@/assets/videos/raikumo.mp4" type="video/mp4" controls autoplay loop muted>your browser does not support HTML5 </video></section></div></div>
+  <div class="parallaxHistory">
+    <div class="main-raised">
+      <div class="container achicar">
+        <section>
+          <h1 id="tituloH">Make history</h1>
+          <div
+            style="border-radius: 5vmax; background: rgb(0, 0, 0, 0.4); padding: 5%;"
+          >
+            <p>
+              Japan – 2053 After several natural disasters,the Japanese economic
+              market was driven into a huge inflationary crisis by enormous
+              repair costs. With the promise that a new currency could bring
+              this inflation down,the Japanese government was giving all the
+              necessary resources and its last remaining financial mediums to an
+              organization called "RAIKUMO" in hope of saving the country. But
+              they took advantage of these funds and shortly thereafter are
+              ruling the government instead of the government ruling them. They
+              later called themselves "RAIKUMO - Saviors of the rising sun" even
+              though they did anything but save the country. People were
+              suffering because of their broken promises and still they gave
+              these people hope. They started to conduct experiments. At first
+              it was just some in nature,but after one went wrong and caused a
+              never-ending storm in the clouds over Japan,they switched to
+              experiments on humans. The company which couldn’t keep their
+              promises manipulated those who suffered from the actions of their
+              own action and promised them a problem-free life if they would
+              only participate in the experiments. Most of these people now lie
+              lifeless 6 feet underground or are still used as test subjects.
+              Nothing changed for years,RAIKUMO kept destroying the country and
+              no one could do anything about it,but little did they know their
+              own creation could one day turn against them.
+            </p>
+          </div>
+        </section>
+      </div>
+      <section class="containerVideo">
+        <div class="containerTitulo"></div>
+        <div class="videoMobile"></div>
+        <video :src="Video" type="video/mp4" controls autoplay loop muted>
+          your browser does not support HTML5
+        </video>
+      </section>
+    </div>
+  </div>
 </template>
+
+<script>
+export default {
+  props: {
+    video: {
+      type: String,
+      default: require("@/assets/videos/raikumo.mp4")
+    }
+  },
+  computed: {
+    Video() {
+      return `${this.video}`;
+    }
+  }
+};
+</script>
 
 <style scoped>
 .parallaxHistory {

@@ -1,5 +1,27 @@
 <template>
-  <parallax class="section contenedor-portada"><aside id="left"><div class="md-size-50 md-small-size-70 md-xsmall-size-100 textoIntro imgMobile" :style="Image"><h1 class="title blanco">Discover,Collect and play a great Card Game </h1><h4>Built on the NEAR Blockchain </h4><br/><div class="botoncito"><md-button class="md-info md-lg" href="" target="_blank"><md-tooltip class="tooltip" md-direction="right">Coming soon! </md-tooltip><span class="texto-boton">Login with Near</span></md-button></div></div></aside><aside id="right"><div class="decoracionImg"><div class="img" :style="Image"/></div></aside></parallax>
+  <parallax class="section contenedor-portada"
+    ><aside id="left">
+      <div
+        class="md-size-50 md-small-size-70 md-xsmall-size-100 textoIntro imgMobile"
+        :style="Image"
+      >
+        <h1 class="title blanco">
+          Discover,Collect and play a great Card Game
+        </h1>
+        <h4>Built on the NEAR Blockchain</h4>
+        <br />
+        <div class="botoncito">
+          <md-button class="md-info md-lg" href="" target="_blank"
+            ><md-tooltip class="tooltip" md-direction="right"
+              >Coming soon! </md-tooltip
+            ><span class="texto-boton">Login with Near</span></md-button
+          >
+        </div>
+      </div>
+    </aside>
+    <aside id="right">
+      <div class="decoracionImg"><div class="img" :style="Image" /></div></aside
+  ></parallax>
 </template>
 
 <script>
@@ -10,7 +32,7 @@ export default {
     };
   },
   props: {
-    image: {
+    imagen: {
       type: String,
       default: require("@/assets/img/Img.png")
     }
@@ -18,7 +40,7 @@ export default {
   computed: {
     Image() {
       return {
-        backgroundImage: `url(${this.image})`
+        backgroundImage: `url(${this.imagen})`
       };
     }
   }

@@ -34,6 +34,7 @@
       </md-list-item>
 
       <md-button
+        :class="Logo"
         class="md-simple raikumo"
         href="/raikumo"
         @click="scrollToElement()"
@@ -198,6 +199,11 @@ export default {
     MobileMenu
   },
   computed: {
+    Logo() {
+      return {
+        logoRaikumo: true
+      };
+    },
     showDownload() {
       const excludedRoutes = ["login", "landing", "profile"];
       return excludedRoutes.every(r => r !== this.$route.name);
@@ -250,10 +256,12 @@ export default {
   display: flex;
 }
 .raikumo {
-  background: center no-repeat url("../assets/logos/raikumo long.png");
-  background-size: cover;
   position: relative;
   width: 20%;
+}
+.logoRaikumo {
+  background: center no-repeat url("../assets/logos/raikumo long.png");
+  background-size: cover;
 }
 .centrarMobile {
   margin: auto !important;
