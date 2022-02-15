@@ -4,11 +4,11 @@
       <div class="container achicar">
         <section>
           <h1 id="tituloH">Make history</h1>
-          <div class="filtroA"></div>
+          <!-- <div class="filtroA"></div>
           <div class="filtroB"></div>
           <div class="filtroC"></div>
           <div class="filtroD"></div>
-          <div class="filtroE"></div>
+          <div class="filtroE"></div> -->
           <div
             style="border-radius: 5vmax; background: rgb(0, 0, 0, 0.4); padding: 5%;"
           >
@@ -40,8 +40,6 @@
         </section>
       </div>
       <!-- <section class="containerVideo">
-        <div class="filtroA"></div>
-        <div class="filtroD"></div>
         <div class="containerTitulo"></div>
         <div class="videoMobile"></div>
         <video

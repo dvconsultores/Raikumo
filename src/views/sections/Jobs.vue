@@ -4,7 +4,7 @@
     <div class="container achicar">
       <section>
         <h1 id="tituloH">Jobs</h1>
-        <div class="filtroA"></div>
+        <!-- <div class="filtroA"></div>
         <div class="filtroB"></div>
         <div class="filtroC"></div>
         <div class="filtroD"></div>
@@ -13,7 +13,7 @@
         <div class="filtroG"></div>
         <div class="filtroH"></div>
         <div class="filtroI"></div>
-        <div class="filtroJ"></div>
+        <div class="filtroJ"></div> -->
         <div class="containerTexto">
           <h2>Art Director</h2>
           <p>

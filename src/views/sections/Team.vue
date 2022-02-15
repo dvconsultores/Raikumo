@@ -1,9 +1,9 @@
 <template>
   <div class="parallaxHistory">
-    <div class="filtro3"></div>
+    <!-- <div class="filtro3"></div> -->
     <section class="container containerGrid">
       <section class="section grid">
-        <div class="filtroA"></div>
+        <!-- <div class="filtroA"></div>
         <div class="filtroB"></div>
         <div class="filtroC"></div>
         <div class="filtroD"></div>
@@ -11,7 +11,7 @@
         <div class="filtroF"></div>
         <div class="filtroG"></div>
         <div class="filtroI"></div>
-        <div class="filtroJ"></div>
+        <div class="filtroJ"></div> -->
         <aside
           class="containerTeam"
           v-for="(item, index) in dataTeam"

@@ -14,10 +14,10 @@
         <br />
         <div class="botoncito">
           <md-button class="md-info md-lg" href="" target="_blank">
-            <span class="texto-boton">Login with Near</span>
             <md-tooltip class="tooltip" md-direction="right">
               Coming soon!
             </md-tooltip>
+            <span class="texto-boton">Login with Near</span>
           </md-button>
         </div>
       </div>
