@@ -1,18 +1,5 @@
 <template>
-  <div>
-    <div class="espacioArriba"></div>
-    <div class="parallaxIndex">
-      <intro id="intro"></intro>
-      <main class="main-raised">
-        <div class="espacio"></div>
-        <!--////////////////////-->
-        <help id="FAQ"></help>
-        <history id="history"></history>
-        <team id="team"></team>
-        <jobs id="jobs"></jobs>
-      </main>
-    </div>
-  </div>
+  <div><div class="espacioArriba"></div><div class="parallaxIndex"><intro id="intro"></intro><main class="main-raised"><div class="espacio"></div><!--////////////////////--><help id="FAQ"></help><history id="history"></history><team id="team"></team><jobs id="jobs"></jobs></main></div></div>
 </template>
 
 <script>

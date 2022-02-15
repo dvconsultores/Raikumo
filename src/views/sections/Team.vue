@@ -1,38 +1,5 @@
 <template>
-  <div class="parallaxHistory">
-    <!-- <div class="filtro3"></div> -->
-    <section class="container containerGrid">
-      <section class="section grid">
-        <!-- <div class="filtroA"></div>
-        <div class="filtroB"></div>
-        <div class="filtroC"></div>
-        <div class="filtroD"></div>
-        <div class="filtroE"></div>
-        <div class="filtroF"></div>
-        <div class="filtroG"></div>
-        <div class="filtroI"></div>
-        <div class="filtroJ"></div> -->
-        <aside
-          class="containerTeam"
-          v-for="(item, index) in dataTeam"
-          v-bind:key="index"
-        >
-          <div class="containerFoto">
-            <img :src="team1" alt="Circle Image" />
-          </div>
-          <div class="containerDatos">
-            <h2>{{ item.nombre }}</h2>
-            <p>
-              <strong>{{ item.cargo }}</strong>
-              <br />{{ item.twitter }}
-              <br />
-              <i class="fab fa-twitter" />
-            </p>
-          </div>
-        </aside>
-      </section>
-    </section>
-  </div>
+  <div class="parallaxHistory"><!-- <div class="filtro3"></div>--><section class="container containerGrid"><section class="section grid"><!-- <div class="filtroA"></div><div class="filtroB"></div><div class="filtroC"></div><div class="filtroD"></div><div class="filtroE"></div><div class="filtroF"></div><div class="filtroG"></div><div class="filtroI"></div><div class="filtroJ"></div>--><aside class="containerTeam" v-for="(item, index) in dataTeam" v-bind:key="index"><div class="containerFoto"><img :src="team1" alt="Circle Image"/></div><div class="containerDatos"><h2>{{item.nombre}}</h2><p><strong>{{item.cargo}}</strong><br/>{{item.twitter}}<br/><i class="fab fa-twitter"/></p></div></aside></section></section></div>
 </template>
 
 <script>
