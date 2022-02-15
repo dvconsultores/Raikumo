@@ -69,7 +69,7 @@
               slot="title"
               data-toggle="dropdown"
             >
-              <img src="@/assets/team/monkey.jpg" alt="Circle Image" />
+              <img :src="Perfil" alt="Circle Image" />
             </div>
             <ul class="dropdown-menu dropdown-menu-right">
               <li class="dropdown-header">You account</li>
@@ -144,7 +144,7 @@
                       slot="title"
                       data-toggle="dropdown"
                     >
-                      <img src="@/assets/team/monkey.jpg" alt="Circle Image" />
+                      <img :src="Perfil" alt="Circle Image" />
                     </div>
                     <ul class="dropdown-menu dropdown-menu-right">
                       <li class="dropdown-header">You account</li>
@@ -198,11 +198,20 @@ export default {
   components: {
     MobileMenu
   },
+  props: {
+    perfil: {
+      type: String,
+      default: require("@/assets/team/monkey.jpg")
+    }
+  },
   computed: {
     Logo() {
       return {
         logoRaikumo: true
       };
+    },
+    Perfil() {
+      return `${this.perfil}`;
     },
     showDownload() {
       const excludedRoutes = ["login", "landing", "profile"];
