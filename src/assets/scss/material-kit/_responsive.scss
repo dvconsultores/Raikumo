@@ -59,6 +59,9 @@
   #history {
     padding-top: 10vmax !important;
   }
+  .contenedorTextoJobs {
+    columns: 1 !important;
+  }
 }
 @media (max-width: 400px) {
   #FAQ {
@@ -102,6 +105,9 @@
   .achicar {
     width: 100% !important;
     padding: 0 !important;
+  }
+  .raikumo {
+    background-size: 180% !important;
   }
 }
 
@@ -598,12 +604,6 @@
   .navbar-toggle:hover,
   .navbar-toggle:focus {
     background-color: transparent !important;
-  }
-}
-
-@media (max-width: 300) {
-  .raikumo {
-    background-size: 180% !important;
   }
 }
 
