@@ -157,7 +157,7 @@
   .botoncito {
     display: flex;
     justify-content: center;
-    margin-bottom: 1vmax;
+    margin-top: 4vmax !important;
   }
   .contenedor-portada {
     grid-template-areas: "left" "bottom" !important;
@@ -207,7 +207,7 @@
   }
 
   .espacio {
-    padding: 1vmax !important;
+    padding: 0vmax !important;
   }
 
   .containerGrid {

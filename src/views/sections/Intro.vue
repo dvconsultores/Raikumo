@@ -1,12 +1,138 @@
 <template>
-  <parallax class="section contenedor-portada"><aside id="left"><div class="md-size-50 md-small-size-70 md-xsmall-size-100 textoIntro imgMobile" :style="Image"><h1 class="title blanco">Discover,Collect <br/>and play a great Card Game </h1><h4>Built on the NEAR Blockchain</h4></div></aside><aside id="right"><div class="decoracionImg"><div class="img" :style="Image"/></div></aside><aside id="bottom"><div class="botoncito"><md-button class="md-info md-lg" href="" target="_blank"><md-tooltip class="tooltip" md-direction="right">Coming soon! </md-tooltip><span class="texto-boton">Login with Near</span></md-button></div></aside></parallax>
+  <parallax class="section contenedor-portada"
+    ><aside id="left">
+      <div
+        class="md-size-50 md-small-size-70 md-xsmall-size-100 textoIntro imgMobile"
+        :style="Image"
+      >
+        <h1 class="title blanco">
+          Discover,Collect <br />and play a great Card Game
+        </h1>
+        <h4>Built on the NEAR Blockchain</h4>
+      </div>
+    </aside>
+    <aside id="right">
+      <div class="decoracionImg"><div class="img" :style="Image" /></div>
+    </aside>
+    <aside id="bottom">
+      <div class="botoncito">
+        <md-button class="md-info md-lg" href="" target="_blank"
+          ><md-tooltip class="tooltip" md-direction="right"
+            >Coming soon! </md-tooltip
+          ><span class="texto-boton">Login with Near</span></md-button
+        >
+      </div>
+    </aside></parallax
+  >
 </template>
 
 <script>
-export default{data(){return{first:false};},props:{imagen:{type:String,default:require("@/assets/img/Img.png")}},computed:{Image(){return{backgroundImage:`url(${this.imagen})`};},},};
+export default {
+  data() {
+    return { first: false };
+  },
+  props: { imagen: { type: String, default: require("@/assets/img/Img.png") } },
+  computed: {
+    Image() {
+      return { backgroundImage: `url(${this.imagen})` };
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-.blanco{color:#fff !important}.texto-boton{color:#000 !important;font-weight:600;font-size:1.5vmax;text-transform:none !important}.botoncito{visibility:visible}.textoIntro h1{font-family:-apple-system,BlinkMacSystemFont,Arial,sans-serif !important;font-size:5vmax;font-weight:900;visibility:visible}.textoIntro h4{font-size:1.5vmax;visibility:visible}.imgMobile{background:center no-repeat;background-size:cover;width:auto;height:auto;border-radius:1em;z-index:2;visibility:hidden}.img{background:center no-repeat;background-size:cover;width:98%;height:98%;z-index:2}.decoracionImg{display:flex;align-items:center;justify-content:center;width:100%;height:27vmax;border:#6e6e11 1px solid}.decoracionImg:after{content:"";position:absolute;width:39%;height:27vmax;border:#6e6e11 1px solid;transform:translate(.2%,1.4%);z-index:-1}.decoracionImg:before{content:"";position:absolute;width:40%;height:27vmax;border:#6e6e11 1px solid;transform:translate(-1%,-1%);z-index:1}#left{grid-area:left;display:flex;align-items:center}
-#right{grid-area:right;width:100%;height:100%;display:flex;align-items:center;margin:auto 5%}#bottom{color:#fff;grid-area:bottom;display:flex;justify-content:flex-start}.contenedor-portada{display:grid;grid-template-areas:"left right" "left right" "bottom bottom";grid-template-columns:55% 40%;margin-left:4%}.tooltip{background:#00000000 !important;backdrop-filter:blur(5px) !important;color:#fff !important}
+.blanco {
+  color: #fff !important;
+}
+.texto-boton {
+  color: #000 !important;
+  font-weight: 600;
+  font-size: 1.5vmax;
+  text-transform: none !important;
+}
+.botoncito {
+  visibility: visible;
+}
+.textoIntro h1 {
+  font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif !important;
+  font-size: 5vmax;
+  font-weight: 900;
+  visibility: visible;
+}
+.textoIntro h4 {
+  font-size: 1.5vmax;
+  visibility: visible;
+}
+.imgMobile {
+  background: center no-repeat;
+  background-size: cover;
+  width: auto;
+  height: auto;
+  border-radius: 1em;
+  z-index: 2;
+  visibility: hidden;
+}
+.img {
+  background: center no-repeat;
+  background-size: cover;
+  width: 98%;
+  height: 98%;
+  z-index: 2;
+}
+.decoracionImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 27vmax;
+  border: #6e6e11 1px solid;
+}
+.decoracionImg:after {
+  content: "";
+  position: absolute;
+  width: 39%;
+  height: 27vmax;
+  border: #6e6e11 1px solid;
+  transform: translate(0.2%, 1.4%);
+  z-index: -1;
+}
+.decoracionImg:before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 27vmax;
+  border: #6e6e11 1px solid;
+  transform: translate(-1%, -1%);
+  z-index: 1;
+}
+#left {
+  grid-area: left;
+  display: flex;
+  align-items: center;
+}
+#right {
+  grid-area: right;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: auto 5%;
+}
+#bottom {
+  color: #fff;
+  grid-area: bottom;
+  display: flex;
+  justify-content: flex-start;
+}
+.contenedor-portada {
+  display: grid;
+  grid-template-areas: "left right" "left right" "bottom bottom";
+  grid-template-columns: 55% 40%;
+  margin-left: 4%;
+}
+.tooltip {
+  background: #00000000 !important;
+  backdrop-filter: blur(5px) !important;
+  color: #fff !important;
+}
 </style>
