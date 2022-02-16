@@ -1,9 +1,12 @@
 <template>
-  <div class="notFound"><h1 class="letras">(404) Page NotFound</h1><div class="containerMono"><img :src="Mono" alt="Monkey"/></div></div>
+  <div class="notFound">
+    <h1 class="letras">(404) Page NotFound</h1>
+    <div class="containerMono"><img :src="Mono" alt="Monkey" /></div>
+  </div>
 </template>
 
 <script>
-export default{props:{mono:{type:String,default:require("@/assets/team/monkey.jpg")},},computed:{Mono(){return `${this.mono}`;},},};
+export default{props:{mono:{type:String,default:require("@/assets/team/monkey.jpg")},},computed:{Mono(){return `${this.mono}`;}}};
 </script>
 
 <style scoped>
