@@ -12,6 +12,7 @@
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run dev"
   },
   "dependencies": {
+    "axios": "^0.26.0",
     "babel-preset-es2015": "^6.24.1",
     "core-js": "3.5.0",
     "nouislider": "14.1.0",

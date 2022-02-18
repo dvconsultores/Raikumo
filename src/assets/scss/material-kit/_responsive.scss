@@ -54,6 +54,12 @@
   #team {
     padding-top: 0vmax !important;
   }
+  input:nth-child(1) {
+    width: 13em !important;
+  }
+  input:nth-child(2) {
+    width: 8em !important;
+  }
 }
 @media (max-width: 600px) {
   #history {
@@ -63,12 +69,18 @@
     columns: 1 !important;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 414px) {
   #FAQ {
     margin-bottom: 0vmax !important;
   }
   #history {
     padding-top: 8vmax !important;
+  }
+  input:nth-child(1) {
+    width: 8em !important;
+  }
+  input:nth-child(2) {
+    width: 7em !important;
   }
 }
 @media (max-width: 375px) {
@@ -114,6 +126,10 @@
 /*          Changes for small display      */
 
 @media (max-width: 991px) {
+  form {
+    font-size: 14px;
+  }
+
   .filtro8 {
     display: none !important;
   }
