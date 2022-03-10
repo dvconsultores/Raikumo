@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+  <section class="section filtroFondo">
     <div class="container achicar">
       <md-toolbar
         style="justify-content: start"
@@ -42,7 +42,80 @@
 </template>
 
 <script>
-  export default{data(){return{iconoA:"add_circle",iconoB:"remove",dataQuestion:[{id:1,question:"What is Raikumo?",detalle:"Raikumo is a digital collectible card game (DCCG) or Online collectible card game (OCCG) built on near blockchain.",icono:"add_circle",color:true},{id:2,question:"What does it have to do with NFTs?",detalle:"The digital trading card in game are owned by users as NFTs",icono:"add_circle",color:true},{id:3,question:"When is the NFT drop?",detalle:"We're aiming for our first nft pack drop sometime around march 2022 - april 2022",icono:"add_circle",color:true},{id:4,question:"When will the game launch?",detalle:"End of 2022 or q1 2023",icono:"add_circle",color:true},{id:5,question:"Does it have a token(fungible)?",detalle:"No we dont have a token yet.",icono:"add_circle",color:true},{id:6,question:"Are you looking for investment?",detalle:"Yes we're a startup and looking for investment, you can contact us in discord.",icono:"add_circle",color:true},{id:7,question:"Whitepaper, Roadmaps?",detalle:"Whitepaper and roadmap will be available soon",icono:"add_circle",color:true}]};},methods:{cambiarToolbar(id){if (this.dataQuestion[id].icono===this.iconoA){this.dataQuestion[id].icono=this.iconoB;this.dataQuestion[id].color=false}else{this.dataQuestion[id].icono=this.iconoA;this.dataQuestion[id].color=true}}}};
+export default {
+  data() {
+    return {
+      iconoA: "add_circle",
+      iconoB: "remove",
+      dataQuestion: [
+        {
+          id: 1,
+          question: "What is Raikumo?",
+          detalle:
+            "Raikumo is a digital collectible card game (DCCG) or Online collectible card game (OCCG) built on near blockchain.",
+          icono: "add_circle",
+          color: true
+        },
+        {
+          id: 2,
+          question: "What does it have to do with NFTs?",
+          detalle:
+            "The digital trading card in game are owned by users as NFTs",
+          icono: "add_circle",
+          color: true
+        },
+        {
+          id: 3,
+          question: "When is the NFT drop?",
+          detalle:
+            "We're aiming for our first nft pack drop sometime around march 2022 - april 2022",
+          icono: "add_circle",
+          color: true
+        },
+        {
+          id: 4,
+          question: "When will the game launch?",
+          detalle: "End of 2022 or q1 2023",
+          icono: "add_circle",
+          color: true
+        },
+        {
+          id: 5,
+          question: "Does it have a token(fungible)?",
+          detalle: "No we dont have a token yet.",
+          icono: "add_circle",
+          color: true
+        },
+        {
+          id: 6,
+          question: "Are you looking for investment?",
+          detalle:
+            "Yes we're a startup and looking for investment, you can contact us in discord.",
+          icono: "add_circle",
+          color: true
+        },
+        {
+          id: 7,
+          question: "Whitepaper, Roadmaps?",
+          detalle: "Whitepaper and roadmap will be available soon",
+          icono: "add_circle",
+          color: true
+        }
+      ]
+    };
+  },
+  methods: {
+    cambiarToolbar(id) {
+      if (this.dataQuestion[id].icono === this.iconoA) {
+        this.dataQuestion[id].icono = this.iconoB;
+        this.dataQuestion[id].color = false;
+      } else {
+        this.dataQuestion[id].icono = this.iconoA;
+        this.dataQuestion[id].color = true;
+      }
+    }
+  }
+};
 </script>
 
 <style lang="scss">

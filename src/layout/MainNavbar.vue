@@ -188,6 +188,19 @@
 </template>
 
 <script>
+let ubicacionPrincipal = window.pageYOffset;
+let resizeTimeout;
+function resizeThrottler(actualResizeHandler) {
+  // ignore resize events as long as an actualResizeHandler execution is in the queue
+  if (!resizeTimeout) {
+    resizeTimeout = setTimeout(() => {
+      resizeTimeout = null;
+      actualResizeHandler();
+
+      // The actualResizeHandler will execute at a rate of 15fps
+    }, 80);
+  }
+}
 import MobileMenu from "@/layout/MobileMenu";
 export default {
   data() {
@@ -244,7 +257,22 @@ export default {
       if (element_id) {
         element_id.scrollIntoView({ block: "end", behavior: "smooth" });
       }
+    },
+    OcultarNavbar() {
+      let Desplazamiento_Actual = window.pageYOffset;
+      if (ubicacionPrincipal >= Desplazamiento_Actual) {
+        document.getElementById("toolbar").style.top = "0";
+      } else {
+        document.getElementById("toolbar").style.top = "-100px";
+      }
+      ubicacionPrincipal = Desplazamiento_Actual;
+    },
+    scrollListener() {
+      resizeThrottler(this.OcultarNavbar);
     }
+  },
+  mounted() {
+    document.addEventListener("scroll", this.scrollListener);
   },
   beforeDestroy() {
     document.removeEventListener("scroll", this.scrollListener);
