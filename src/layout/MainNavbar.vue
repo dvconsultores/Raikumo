@@ -205,22 +205,22 @@ import MobileMenu from "@/layout/MobileMenu";
 export default {
   data() {
     return {
-      toggledClass: false,
+      toggledClass: false
     };
   },
   components: {
-    MobileMenu,
+    MobileMenu
   },
   props: {
     perfil: {
       type: String,
-      default: require("@/assets/team/monkey.jpg"),
-    },
+      default: require("@/assets/team/monkey.jpg")
+    }
   },
   computed: {
     Logo() {
       return {
-        logoRaikumo: true,
+        logoRaikumo: true
       };
     },
     Perfil() {
@@ -228,8 +228,8 @@ export default {
     },
     showDownload() {
       const excludedRoutes = ["login", "landing", "profile"];
-      return excludedRoutes.every((r) => r !== this.$route.name);
-    },
+      return excludedRoutes.every(r => r !== this.$route.name);
+    }
   },
   methods: {
     bodyClick() {
@@ -269,56 +269,17 @@ export default {
     },
     scrollListener() {
       resizeThrottler(this.OcultarNavbar);
-    },
+    }
   },
   mounted() {
     document.addEventListener("scroll", this.scrollListener);
   },
   beforeDestroy() {
     document.removeEventListener("scroll", this.scrollListener);
-  },
+  }
 };
 </script>
 
 <style scoped>
-* {
-  z-index: 10;
-}
-.blanco {
-  color: #fff !important;
-}
-.sectionFlex {
-  justify-content: center;
-  width: 90%;
-  display: flex;
-}
-.raikumo {
-  position: relative;
-  width: 20%;
-}
-.logoRaikumo {
-  background: center no-repeat url("../assets/logos/raikumo long.png");
-  background-size: cover;
-}
-.centrarMobile {
-  margin: auto !important;
-}
-.eliminarMobile {
-  display: block;
-  margin: 0 10px;
-}
-.eliminarNavbar {
-  display: none;
-}
-.foto {
-  background: center no-repeat;
-  background-size: cover;
-}
-.moverBoton {
-  position: absolute !important;
-  top: 10%;
-}
-.textoNavbar {
-  font-size: 1.125rem !important;
-}
+*{z-index:10}.blanco{color:#fff !important}.sectionFlex{justify-content:center;width:90%;display:flex}.raikumo{position:relative;width:20%}.logoRaikumo{background:center no-repeat url("../assets/logos/raikumo long.png");background-size:cover}.centrarMobile{margin:auto !important}.eliminarMobile{display:block;margin:0 10px}.eliminarNavbar{display:none}.foto{background:center no-repeat;background-size:cover}.moverBoton{position:absolute !important;top:10%}.textoNavbar{font-size:1.125rem !important}
 </style>
