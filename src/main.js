@@ -2,6 +2,9 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import axios from "axios";
+import VueAnimateOnScroll from "vue-animate-onscroll";
+
+Vue.use(VueAnimateOnScroll);
 
 Vue.use(axios);
 
