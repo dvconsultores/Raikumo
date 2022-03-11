@@ -65,6 +65,9 @@
   }
 }
 @media (max-width: 600px) {
+  .containerJoin {
+    padding: 1rem !important;
+  }
   #history {
     padding-top: 10vmax !important;
   }
@@ -98,11 +101,20 @@
 
 /* cmbios para bordes de secciones en pantallas grandes */
 @media (min-width: 1400px) {
+.containerJoin {
+  font-size: 2.5vmax !important;
+  padding: 2rem !important;
+}
   #FAQ {
     margin-bottom: 4vmax !important;
   }
   #history {
     padding-top: 5vmax !important;
+  }
+}
+@media (max-width: 1200px) {
+  .containerFeatures {
+    margin: auto !important;
   }
 }
 
@@ -129,6 +141,9 @@
 /*          Changes for small display      */
 
 @media (max-width: 991px) {
+  .containerJoin {
+    font-size: 3vmax !important;
+  }
   .containerPortada {
     justify-content: center !important;
     align-items: center !important;
@@ -142,9 +157,6 @@
   .right {
     width: 100% !important;
     order: 0;
-  }
-  .containerFeatures {
-    margin: auto;
   }
   .aumento {
     height: 20vmax;
@@ -765,5 +777,31 @@
 @media (max-width: 880px) {
   .containerTextoFeatures {
     width: 100% !important;
+  }
+}
+@media (max-width: 700px) { 
+  .containerFeatures {
+  width: 18vmax !important;
+  height: 19vmax !important;
+  }
+  .containerSectionTeam {
+    grid-template-columns: 1fr 1fr 1fr !important;
+  }
+  .containerTeam p {
+    font-size: 2.5vmax !important;
+  }
+  .containerTeam span {
+    font-size: 1.5vmax !important;
+  }
+}
+@media (max-width: 400px) {
+  .containerSection {
+    width: 100% !important;
+  }
+}
+@media (max-width: 350px) { 
+  .containerSectionTeam {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 1.25rem !important;
   }
 }

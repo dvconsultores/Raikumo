@@ -3,28 +3,18 @@
 @import "material-kit/mixins";
 @import "material-kit/shadows";
 
-//plugin css
-@import "material-kit/plugins/_perfect-scrollbar";
-@import "material-kit/plugins/_plugin-nouislider";
-
 // Core CSS
 @import "material-kit/typography";
 @import "material-kit/buttons";
 @import "material-kit/misc";
-@import "material-kit/images";
-@import "material-kit/inputs";
-@import "material-kit/alerts";
 @import "material-kit/headers";
 @import "material-kit/example-pages";
-@import "material-kit/checkboxes";
 @import "material-kit/togglebutton";
-@import "material-kit/dialogs";
 @import "material-kit/navbars";
 @import "material-kit/popups";
 @import "material-kit/footers";
+@import "material-kit/dialogs";
 
 // Fancy Stuff
 @import "material-kit/dropdown";
-@import "material-kit/cards";
-@import "material-kit/tabs";
 @import "material-kit/responsive";
