@@ -1,6 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Index from "./views/Index.vue";
+import History from "./views/sections/History.vue";
 import MainNavbar from "./layout/MainNavbar.vue";
 import MainFooter from "./layout/MainFooter.vue";
 import NotFound from "./views/404.vue";
@@ -13,6 +14,14 @@ export default new Router({
       path: "/",
       name: "index",
       components: { default: Index, header: MainNavbar, footer: MainFooter },
+      props: {
+        footer: { backgroundColor: "black" }
+      }
+    },
+    {
+      path: "/history",
+      name: "history",
+      components: { default: History, header: MainNavbar, footer: MainFooter },
       props: {
         footer: { backgroundColor: "black" }
       }

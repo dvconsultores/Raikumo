@@ -27,5 +27,5 @@ export default {
 </script>
 
 <style scoped>
-.containerPortada{padding-left:5%;padding-right:5%}.containerTitle{margin-bottom:20px;margin-top:20px;display:flex;justify-content:center}.containerTitle h1{font-family:-apple-system,BlinkMacSystemFont,Arial,sans-serif !important;font-size:5vmax;line-height:5rem;font-weight:900;visibility:visible}.containerSection{margin:auto;width:85%;display:flex;flex-direction:column}.containerJoin{color:#a5a !important;font-weight:700 !important;font-size:2vmax;padding:1.25rem;display:flex;justify-content:space-between}.containerJoin:hover{background-color:rgba(217,217,217,.15)}
+.containerPortada{padding-left:5%;padding-right:5%}.containerTitle{margin-bottom:20px;margin-top:20px;display:flex;justify-content:center}.containerTitle h1{text-align:center;font-family:-apple-system,BlinkMacSystemFont,Arial,sans-serif !important;font-size:5vmax;line-height:5rem;font-weight:900;visibility:visible}.containerSection{margin:auto;width:85%;display:flex;flex-direction:column}.containerJoin{color:#a5a !important;font-weight:700 !important;font-size:2vmax;padding:1.25rem;display:flex;justify-content:space-between}.containerJoin:hover{background-color:rgba(217,217,217,.15)}
 </style>

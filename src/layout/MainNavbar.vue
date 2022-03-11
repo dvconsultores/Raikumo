@@ -19,18 +19,18 @@
 
       <md-list-item
         class="eliminarMobile"
-        href="#history"
+        href="#/history"
         @click="scrollToElement()"
       >
-        <p class="centrarMobile">History</p>
+        <p class="centrarMobile textoNavbar">History</p>
       </md-list-item>
 
       <md-list-item
         class="eliminarMobile"
-        href="#team"
+        href="#/#team"
         @click="scrollToElement()"
       >
-        <p class="centrarMobile">Team</p>
+        <p class="centrarMobile textoNavbar">Team</p>
       </md-list-item>
 
       <md-button
@@ -42,18 +42,18 @@
 
       <md-list-item
         class="eliminarMobile"
-        href="#FAQ"
+        href="#/#FAQ"
         @click="scrollToElement()"
       >
-        <p class="centrarMobile">FAQ</p>
+        <p class="centrarMobile textoNavbar">FAQ</p>
       </md-list-item>
 
       <md-list-item
         class="eliminarMobile"
-        href="#jobs"
+        href="#/#join"
         @click="scrollToElement()"
       >
-        <p class="centrarMobile">Jobs</p>
+        <p class="centrarMobile textoNavbar">Jobs</p>
       </md-list-item>
     </section>
 
@@ -119,16 +119,16 @@
       <div class="md-collapse">
         <div class="md-collapse-wrapper">
           <mobile-menu nav-mobile-section-start="true">
-            <md-list-item href="#history" @click="scrollToElement()">
+            <md-list-item href="#/history" @click="scrollToElement()">
               <p class="centrarMobile">History</p>
             </md-list-item>
-            <md-list-item href="#team" @click="scrollToElement()">
+            <md-list-item href="#/#team" @click="scrollToElement()">
               <p class="centrarMobile">Team</p>
             </md-list-item>
-            <md-list-item href="#FAQ" @click="scrollToElement()">
+            <md-list-item href="#/#FAQ" @click="scrollToElement()">
               <p class="centrarMobile">FAQ</p>
             </md-list-item>
-            <md-list-item href="#jobs" @click="scrollToElement()">
+            <md-list-item href="#/#join" @click="scrollToElement()">
               <p class="centrarMobile">Jobs</p>
             </md-list-item>
 
@@ -205,22 +205,22 @@ import MobileMenu from "@/layout/MobileMenu";
 export default {
   data() {
     return {
-      toggledClass: false
+      toggledClass: false,
     };
   },
   components: {
-    MobileMenu
+    MobileMenu,
   },
   props: {
     perfil: {
       type: String,
-      default: require("@/assets/team/monkey.jpg")
-    }
+      default: require("@/assets/team/monkey.jpg"),
+    },
   },
   computed: {
     Logo() {
       return {
-        logoRaikumo: true
+        logoRaikumo: true,
       };
     },
     Perfil() {
@@ -228,8 +228,8 @@ export default {
     },
     showDownload() {
       const excludedRoutes = ["login", "landing", "profile"];
-      return excludedRoutes.every(r => r !== this.$route.name);
-    }
+      return excludedRoutes.every((r) => r !== this.$route.name);
+    },
   },
   methods: {
     bodyClick() {
@@ -269,17 +269,56 @@ export default {
     },
     scrollListener() {
       resizeThrottler(this.OcultarNavbar);
-    }
+    },
   },
   mounted() {
     document.addEventListener("scroll", this.scrollListener);
   },
   beforeDestroy() {
     document.removeEventListener("scroll", this.scrollListener);
-  }
+  },
 };
 </script>
 
 <style scoped>
-*{z-index:10}.blanco{color:#fff !important}.sectionFlex{justify-content:center;width:90%;display:flex}.raikumo{position:relative;width:20%}.logoRaikumo{background:center no-repeat url("../assets/logos/raikumo long.png");background-size:cover}.centrarMobile{margin:auto !important}.eliminarMobile{display:block;margin:0 10px}.eliminarNavbar{display:none}.foto{background:center no-repeat;background-size:cover}.moverBoton{position:absolute !important;top:10%}
+* {
+  z-index: 10;
+}
+.blanco {
+  color: #fff !important;
+}
+.sectionFlex {
+  justify-content: center;
+  width: 90%;
+  display: flex;
+}
+.raikumo {
+  position: relative;
+  width: 20%;
+}
+.logoRaikumo {
+  background: center no-repeat url("../assets/logos/raikumo long.png");
+  background-size: cover;
+}
+.centrarMobile {
+  margin: auto !important;
+}
+.eliminarMobile {
+  display: block;
+  margin: 0 10px;
+}
+.eliminarNavbar {
+  display: none;
+}
+.foto {
+  background: center no-repeat;
+  background-size: cover;
+}
+.moverBoton {
+  position: absolute !important;
+  top: 10%;
+}
+.textoNavbar {
+  font-size: 1.125rem !important;
+}
 </style>

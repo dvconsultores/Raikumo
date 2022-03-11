@@ -794,14 +794,14 @@
     font-size: 1.5vmax !important;
   }
 }
-@media (max-width: 400px) {
-  .containerSection {
-    width: 100% !important;
-  }
-}
-@media (max-width: 350px) { 
+@media (max-width: 499px) {
   .containerSectionTeam {
     grid-template-columns: 1fr 1fr !important;
     gap: 1.25rem !important;
+  }
+}
+@media (max-width: 400px) {
+  .containerSection {
+    width: 100% !important;
   }
 }
