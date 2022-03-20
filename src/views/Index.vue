@@ -3,7 +3,7 @@
     <div class="espacioArriba"></div>
     <div class="parallaxIndex">
       <intro
-        v-animate-onscroll.repeat="'anim1'"
+        v-animate-onscroll="'anim1'"
         class="anim1Start"
         id="intro"
         style="margin-bottom: 15vmax !important"
@@ -12,7 +12,7 @@
         <WhatIs id="intro"></WhatIs>
         <section
           class="containerVideo anim1-2Start"
-          v-animate-onscroll.repeat="'anim1-2'"
+          v-animate-onscroll="'anim1-2'"
         >
           <div class="containerTitulo"></div>
           <div class="videoMobile"></div>
@@ -23,16 +23,8 @@
       </main>
       <Features></Features>
       <team id="team"></team>
-      <Join
-        v-animate-onscroll.repeat="'anim1'"
-        class="anim1Start"
-        id="join"
-      ></Join>
-      <help
-        v-animate-onscroll.repeat="'anim1'"
-        class="anim1Start"
-        id="FAQ"
-      ></help>
+      <Join v-animate-onscroll="'anim1'" class="anim1Start" id="join"></Join>
+      <help v-animate-onscroll="'anim1'" class="anim1Start" id="FAQ"></help>
     </div>
   </div>
 </template>
