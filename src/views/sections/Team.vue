@@ -208,7 +208,7 @@ export default {
 .containerTitle h1 {
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif !important;
-  font-size: 5vmax;
+  font-size: var(--step-6);
   line-height: 5rem;
   font-weight: 900;
   visibility: visible;
@@ -228,11 +228,12 @@ export default {
 .containerTeam p {
   margin-top: 0.625rem;
   margin-bottom: 0.625rem;
-  font-size: 2vmax;
+  font-size: var(--step-1);
   text-align: center;
 }
 .containerTeam span {
-  font-size: 1.3vmax;
+  font-size: var(--step--2);
+  line-height: 2ch;
 }
 .perfil {
   border-radius: 1000em;

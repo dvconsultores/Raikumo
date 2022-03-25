@@ -100,6 +100,11 @@
 }
 
 /* cmbios para bordes de secciones en pantallas grandes */
+@media (min-width: 1300px) {
+  .containerFeatures h4 {
+    font-size: var(--step--1) !important;
+  }
+}
 @media (min-width: 1400px) {
 .containerJoin {
   font-size: 2.5vmax !important;
@@ -141,6 +146,22 @@
 /*          Changes for small display      */
 
 @media (max-width: 991px) {
+  .contenedor-portada {
+    padding: 0 !important;
+  }
+  .containerPortada {
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+  }
+  .containerTeam span {
+    font-size: var(--step--3) !important;
+  }
+  #intro {
+    margin-bottom: auto !important;
+  }
+  .containerFeatures:hover {
+    transform: translateY(0px) !important;
+  }
   .containerJoin {
     font-size: 3vmax !important;
   }
@@ -152,6 +173,7 @@
   }
   .left {
     width: 100% !important;
+    gap: 10px;
     order: 1;
   }
   .right {
@@ -789,9 +811,6 @@
   }
   .containerTeam p {
     font-size: 2.5vmax !important;
-  }
-  .containerTeam span {
-    font-size: 1.5vmax !important;
   }
 }
 @media (max-width: 499px) {
