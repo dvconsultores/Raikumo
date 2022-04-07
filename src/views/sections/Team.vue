@@ -115,7 +115,7 @@ export default {
         {
           nombre: "Princemilfula",
           twitter: "@princemilfula",
-          cargo: "Contributors",
+          cargo: "Contributor",
           perfil: require("@/assets/team/princemilfula.jpg")
         },
         // {
@@ -128,44 +128,50 @@ export default {
         {
           nombre: "DDCHR",
           twitter: "@DDCHR07",
-          cargo: "Contributors",
+          cargo: "Contributor",
           perfil: require("@/assets/team/Totallynormie.jpg")
         },
         {
           nombre: "Spike",
           twitter: "@candyfaguette",
-          cargo: "Contributors",
+          cargo: "Contributor",
           perfil: require("@/assets/team/spike.jpg")
         },
         {
           nombre: "Lanky",
           twitter: "@lanky_ay",
-          cargo: "Contributors",
+          cargo: "Contributor",
           perfil: require("@/assets/team/lankwell.jpg")
         },
         {
           nombre: "Starpause",
           twitter: "@starpause",
-          cargo: "Contributors",
+          cargo: "Contributor",
           perfil: require("@/assets/team/starpause.jpg")
         },
         {
           nombre: "Nick Ward",
           twitter: "@nickawkward",
-          cargo: "Contributors",
+          cargo: "Contributor",
           perfil: require("@/assets/team/wardn.jpg")
         },
         {
           nombre: "Zach",
           twitter: "@transmental",
-          cargo: "Contributors",
+          cargo: "Contributor",
           perfil: require("@/assets/team/LordTylerWard.jpg")
         },
         {
           nombre: "Illustrious",
-          twitter: "illustriousboy",
-          cargo: "Contributors",
+          twitter: "@illustriousboy",
+          cargo: "Contributor",
           perfil: require("@/assets/team/illustrious.jpg")
+        },
+        {
+          nombre: "idioticsavant ",
+          twitter: "@idioticsavant_1",
+          cargo: "Contributor",
+          perfil: require("@/assets/team/idioti.jpg")
         }
       ]
     };
