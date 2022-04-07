@@ -796,6 +796,12 @@
     max-width: 300px;
   }
 }
+@media (max-width: 1450px) {
+  .textoIntro h4{
+    max-width:100% !important;
+  }
+}
+
 @media (max-width: 880px) {
   .containerTextoFeatures {
     width: 100% !important;
