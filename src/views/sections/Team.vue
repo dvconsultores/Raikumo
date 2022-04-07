@@ -37,7 +37,7 @@ export default {
           nombre: "Tyler Scott Ward",
           twitter: "@LordTylerWard",
           cargo: "Advisor",
-          perfil: require("@/assets/team/LordTylerWard.jpg")
+          perfil: require("@/assets/team/Tyler_Scott_Ward.png")
         },
         {
           nombre: "Vlad",
@@ -49,7 +49,7 @@ export default {
           nombre: "Mark Ward",
           twitter: "@markwardbro",
           cargo: "Advisor",
-          perfil: require("@/assets/team/LordTylerWard.jpg")
+          perfil: require("@/assets/team/Mark_Ward.png")
         },
         {
           nombre: "Sharky",
@@ -159,7 +159,7 @@ export default {
           nombre: "Zach",
           twitter: "@transmental",
           cargo: "Contributor",
-          perfil: require("@/assets/team/LordTylerWard.jpg")
+          perfil: require("@/assets/team/transmental.jpg")
         },
         {
           nombre: "Illustrious",
@@ -168,7 +168,7 @@ export default {
           perfil: require("@/assets/team/illustrious.jpg")
         },
         {
-          nombre: "idioticsavant ",
+          nombre: "idioticsavant",
           twitter: "@idioticsavant_1",
           cargo: "Contributor",
           perfil: require("@/assets/team/idioti.jpg")
