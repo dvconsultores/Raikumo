@@ -58,10 +58,10 @@ export default {
           perfil: require("@/assets/team/shark.jpg")
         },
         {
-          nombre: "Algy",
+          nombre: "YoungAlgy",
           twitter: "@youngalgy",
           cargo: "Story writer",
-          perfil: require("@/assets/team/Algernon.jpg")
+          perfil: require("@/assets/team/YoungAlgy.jpg")
         },
         {
           nombre: "ikhimaz",
