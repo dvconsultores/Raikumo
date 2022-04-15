@@ -146,9 +146,6 @@
 /*          Changes for small display      */
 
 @media (max-width: 991px) {
-  .contenedor-portada {
-    padding: 0 !important;
-  }
   .containerPortada {
     padding-left: 0% !important;
     padding-right: 0% !important;
@@ -157,6 +154,7 @@
     font-size: var(--step--3) !important;
   }
   #intro {
+    padding-top: 40px !important;
     margin-bottom: auto !important;
   }
   .containerFeatures:hover {
@@ -181,7 +179,7 @@
     order: 0;
   }
   .aumento {
-    height: 20vmax;
+    height: clamp(12em, 20vw, 14em) !important;
     margin-bottom: 12px;
   }
   .containerTextoFeatures {
@@ -228,7 +226,12 @@
     border-radius: 30% !important;
   }
   #right {
-    display: none !important;
+    .decoracionImg {
+      height:200px;
+      .img {
+        background-size:contain !important;
+      }
+    }
   }
   #bottom {
     justify-content: center !important;
@@ -244,25 +247,20 @@
     margin-top: 4vmax !important;
   }
   .contenedor-portada {
-    grid-template-areas: "left" "bottom" !important;
+    grid-template-areas: "right" "left" "bottom" !important;
     grid-template-columns: 1fr !important;
     grid-template-rows: 2fr !important;
-    padding-right: 2vmax;
+    padding-block: 2em !important;
+    padding-inline: 0vmax !important;
   }
   .imgMobile {
     margin-top: 4vmax !important;
     width: 85% !important;
     height: 100% !important;
-    visibility: visible !important;
   }
-  .img {
-    background: center no-repeat;
-    background-size: cover;
-    width: 98%;
-    height: 98%;
-    z-index: 3;
+  #right2 {
+    display: none !important;
   }
-
   .containerTitulo {
     display: none !important;
   }
@@ -285,7 +283,8 @@
 
   .textoIntro h1 {
     text-align: center !important;
-    font-size: 4vmax !important;
+    font-size: var(--step-5) !important;
+    margin-top: 0 !important;
   }
   .textoIntro h4 {
     text-align: center !important;
@@ -808,16 +807,16 @@
   }
 }
 @media (max-width: 700px) { 
-  .containerFeatures {
-  width: 18vmax !important;
-  height: 19vmax !important;
-  }
+  // .containerFeatures {
+  // width: 18vmax !important;
+  // height: 19vmax !important;
+  // }
   .containerSectionTeam {
     grid-template-columns: 1fr 1fr 1fr !important;
   }
-  .containerTeam p {
-    font-size: 2.5vmax !important;
-  }
+  // .containerTeam p {
+  //   font-size: 2.5vmax !important;
+  // }
 }
 @media (max-width: 499px) {
   .containerSectionTeam {

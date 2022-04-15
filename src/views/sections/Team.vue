@@ -172,6 +172,12 @@ export default {
           twitter: "@idioticsavant_1",
           cargo: "Contributor",
           perfil: require("@/assets/team/idioti.jpg")
+        },
+        {
+          nombre: "jetsetter",
+          twitter: "@jetsetter114",
+          cargo: "Contributor",
+          perfil: require("@/assets/team/jetsetter.jpg")
         }
       ]
     };
